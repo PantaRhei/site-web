@@ -1,4 +1,5 @@
-baseURL = 'http://localhost:1313'
+#baseURL = 'http://localhost:1313'
+baseURL = 'https://pantarhei.github.io/site-web/public/'
 title = 'Segfault45'
 theme = 'risotto'
 author = 'Segfault45'
