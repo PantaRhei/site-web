@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>Bell door &ndash; Segfault45</title>
+<meta name="description" content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). ">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/" class="page__logo-inner">Segfault45</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/cheat_sheet/" title="">Cheat sheet</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/links/" title="">Links</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/posts/" title="">Posts</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/radio/" title="">Radio</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Bell door</h1>
+    </header>
+    <div class="content__body">
+        <p>//in construction</p>
+<h1 id="scan">Scan</h1>
+<p>Door bell signal on 433.93MHz
+<img src="/images/scanning.jpg" alt="Scanning with GQRX-SDR"></p>
+<h1 id="urh-play-and-replay">URH (Play and replay)</h1>
+<p>Recordings with Universal Radio Hacker (URH) and replay with HackRF One.
+<img src="/images/urh_recording.jpg" alt="urh recording"></p>
+<p>Door bell ring when the second pic is send.
+The time between the two signals is 500ms (approximate).
+Here, a bell ring 7 times.
+<img src="/images/urh_complete_capture.png" alt="urh signal"></p>
+<pre tabindex="0"><code>//first signal
+10000 [Pause: 2713 samples]
+100010001110111010001110100011101000100010001000100010001110100010001000100010001110100010000 [Pause: 2667 samples]
+100010001110111010001110100011101000100010001000100010001110100010001000100010001110100010000 [Pause: 2718 samples]
+100010001110111010001110100011101000100010001000000000000000000000000000 [Pause: 598911 samples]
+//second signal
+10000 [Pause: 2691 samples]
+10001000111011101000111010001110100010001000100010001000111010001000100010001000111010001000 [Pause: 2801 samples]
+100010001110111010001110100011101000100010001000100010001110100010001000100010001110100010000 [Pause: 2675 samples]
+1000100011101110100011101000111010001000100010001000100011101000100010000000000000000000 [Pause: 5318425 samples]
+</code></pre><p>Video of the replay with HackRF One.
+<video width="640" height="360" controls>
+<source src="/videos/door_bell.TS.mp4" type="video/mp4">
+Your navigator does not support the video tag.
+</video></p>
+<p>#TODO: exploite urh recoding and play with arduino rf433 module (try with Uno and MKR1010 wifi)</p>
+<p><a href="https://redfoxsec.com/blog/hacking-wireless-doorbells/">https://redfoxsec.com/blog/hacking-wireless-doorbells/</a></p>
+<p><a href="https://manuals.plus/fr/lexman/d06-wireless-doorbell-without-battery-manual">https://manuals.plus/fr/lexman/d06-wireless-doorbell-without-battery-manual</a></p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">Segfault45</h1>
+<p class="about__description">Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée).</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/PantaRhei" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:segfault45@segfault45.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-11-08
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+                        
+    <br /><span class="active"><br /><b></b></span
+    ><br />
+
+       
+</p>
+<br /><br />
+<p class="copyright">© <a href="https://joeroe.io">void void</a> &amp; <a href="https://github.com/joeroe/risotto/graphs/contributors">void</a>.</p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
