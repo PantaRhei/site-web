@@ -6,4 +6,6 @@ hugo server
 hugo server -D
 ```
 
-Enter the following URL in your browser: [http://localhost:1313](http://localhost:1313)
+Enter the following URL in your browser: https://pantarhei.github.io/site-web/public/index.html
+
+https://pantarhei.github.io/site-web/public/index.html
