@@ -2,6 +2,7 @@
 
 Transition du site web vers un server OVH en cours. Bug connus :
 - Les images ne s'affichent pas
+- + bug pour retourner à l'accueil
 
 
 Bonjour, bienvenue sur segfault45.com. Ici, on parle principalement de SDR, informatique et d'électronique.

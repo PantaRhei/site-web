@@ -1,207 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Nmap &ndash; Segfault45</title>
-        <meta
-            name="description"
-            content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). "
-        />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="UTF-8" />
+    <head><title>Nmap &ndash; Segfault45</title>
+<meta name="description" content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). ">
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css"
-            integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
 
-        <link
-            rel="stylesheet"
-            href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://pantarhei.github.io/site-web/public/css/risotto.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://pantarhei.github.io/site-web/public/css/custom.css"
-        />
-    </head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/risotto.css">
+<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+</head>
 
     <body>
         <div class="page">
-            <header class="page__header">
-                <nav class="page__nav main-nav">
-                    <ul>
-                        <li class="nomarker">
-                            <h1 class="page__logo">
-                                <a
-                                    href="https://pantarhei.github.io/site-web/public/index.html"
-                                    class="page__logo-inner"
-                                    >Segfault45</a
-                                >
-                            </h1>
-                        </li>
 
-                        <li class="main-nav__item">
-                            <a
-                                class="nav-main-item"
-                                href="https://pantarhei.github.io/site-web/public/about/"
-                                title=""
-                                >About</a
-                            >
-                        </li>
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="https://pantarhei.github.io/site-web/public/" class="page__logo-inner">Segfault45</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/cheat_sheet/" title="">Cheat sheet</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/links/" title="">Links</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/posts/" title="">Posts</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/radio/" title="">Radio</a></li>
+    
+    </ul>
+</nav>
 
-                        <li class="main-nav__item">
-                            <a
-                                class="nav-main-item"
-                                href="https://pantarhei.github.io/site-web/public/cheat_sheet/"
-                                title=""
-                                >Cheat sheet</a
-                            >
-                        </li>
-
-                        <li class="main-nav__item">
-                            <a
-                                class="nav-main-item"
-                                href="https://pantarhei.github.io/site-web/public/links/"
-                                title=""
-                                >Links</a
-                            >
-                        </li>
-
-                        <li class="main-nav__item">
-                            <a
-                                class="nav-main-item"
-                                href="https://pantarhei.github.io/site-web/public/posts/"
-                                title=""
-                                >Posts</a
-                            >
-                        </li>
-
-                        <li class="main-nav__item">
-                            <a
-                                class="nav-main-item"
-                                href="https://pantarhei.github.io/site-web/public/radio/"
-                                title=""
-                                >Radio</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+</header>
 
             <section class="page__body">
-                <header class="content__header">
-                    <h1>Nmap</h1>
-                </header>
-                <div class="content__body">
-                    <p>My cheat sheet for Nmap.</p>
-                    <p>Syntax:</p>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap <span style="color:#f92672">[</span>Scan Type<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>Options<span style="color:#f92672">]</span> <span style="color:#f92672">{</span>target specification<span style="color:#f92672">}</span>
-</span></span></code></pre>
-                    </div>
-                    <p>
-                        <code>-sS</code> =&gt; TCP SYN (send just TCP SYN never
-                        completes the three-way handshake) Results:
-                    </p>
-                    <ul>
-                        <li>Open ports: SYN/ACK</li>
-                        <li>Closed ports: RST</li>
-                        <li>Filtered ports: No response</li>
-                    </ul>
-                    <p><code>-iL host.lst</code>=&gt; list of host</p>
-                    <h1 id="icmp-echo-requests">ICMP echo requests</h1>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap <span style="color:#f92672">[</span>network adr<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>netmask<span style="color:#f92672">]</span> -sn -oA tnet | grep <span style="color:#66d9ef">for</span> | cut -d<span style="color:#e6db74">&#34; &#34;</span> -f5
-</span></span></code></pre>
-                    </div>
-                    <p>
-                        Arguments (<code>-PE</code> =&gt; disable port scan
-                        (-sn), Nmap automatically ping scan with ICMP Echo
-                        Requests (-PE) ):
-                    </p>
-                    <ul>
-                        <li><code>-sn</code> =&gt; Ping scan</li>
-                        <li><code>-oA</code> =&gt; Output to all formats</li>
-                        <li>
-                            <code>grep for</code> =&gt; Filter the line with
-                            &ldquo;for&rdquo;
-                        </li>
-                        <li>
-                            <code>cut -d&quot; &quot; -f5</code> =&gt; Cut the
-                            fifth field with space delimiter
-                        </li>
-                    </ul>
-                    <h2 id="different-probe-types">Different probe types</h2>
-                    <p>
-                        <code>-PE</code> =&gt; ICMP echo requests
-                        <code>-PS</code> =&gt; TCP SYN ping
-                        <code>-PA</code> =&gt; TCP ACK ping
-                        <code>-PU</code> =&gt; UDP ping <code>-PO</code> =&gt;
-                        IP Protocol ping <code>-PR</code> =&gt; ARP ping
-                    </p>
-                    <h2 id="other-arg">Other arg</h2>
-                    <ul>
-                        <li>
-                            <code>--packet-trace</code> Shows all packets sent
-                            and received
-                        </li>
-                        <li>
-                            <code>--disable-arp-ping</code> Disables ARP ping
-                        </li>
-                        <li>
-                            <code>--reason</code> Displays the reason for
-                            specific result.
-                        </li>
-                    </ul>
-                    <h1 id="initial-ttl-values">Initial TTL Values</h1>
-                    <p>
-                        Exemple come from hack the box, we see the TTL value is
-                        128 so a host is windows.
-                    </p>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap 10.129.2.18 -sn -oA host -PE --packet-trace --disable-arp-ping
+    <header class="content__header">
+        <h1>Nmap</h1>
+    </header>
+    <div class="content__body">
+        <p>My cheat sheet for Nmap.</p>
+<p>Syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap <span style="color:#f92672">[</span>Scan Type<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>Options<span style="color:#f92672">]</span> <span style="color:#f92672">{</span>target specification<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p><code>-sS</code> =&gt; TCP SYN (send just TCP SYN never completes the three-way handshake)
+Results:</p>
+<ul>
+<li>Open ports: SYN/ACK</li>
+<li>Closed ports: RST</li>
+<li>Filtered ports: No response</li>
+</ul>
+<p><code>-iL host.lst</code>=&gt; list of host</p>
+<h1 id="icmp-echo-requests">ICMP echo requests</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap <span style="color:#f92672">[</span>network adr<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>netmask<span style="color:#f92672">]</span> -sn -oA tnet | grep <span style="color:#66d9ef">for</span> | cut -d<span style="color:#e6db74">&#34; &#34;</span> -f5
+</span></span></code></pre></div><p>Arguments (<code>-PE</code> =&gt; disable port scan (-sn), Nmap automatically ping scan with ICMP Echo Requests (-PE) ):</p>
+<ul>
+<li><code>-sn</code> =&gt; Ping scan</li>
+<li><code>-oA</code> =&gt; Output to all formats</li>
+<li><code>grep for</code> =&gt; Filter the line with &ldquo;for&rdquo;</li>
+<li><code>cut -d&quot; &quot; -f5</code> =&gt; Cut the fifth field with space delimiter</li>
+</ul>
+<h2 id="different-probe-types">Different probe types</h2>
+<p><code>-PE</code> =&gt; ICMP echo requests
+<code>-PS</code> =&gt; TCP SYN ping
+<code>-PA</code> =&gt; TCP ACK ping
+<code>-PU</code> =&gt; UDP ping
+<code>-PO</code> =&gt; IP Protocol ping
+<code>-PR</code> =&gt; ARP ping</p>
+<h2 id="other-arg">Other arg</h2>
+<ul>
+<li><code>--packet-trace</code> 	Shows all packets sent and received</li>
+<li><code>--disable-arp-ping</code> 	Disables ARP ping</li>
+<li><code>--reason</code> 	Displays the reason for specific result.</li>
+</ul>
+<h1 id="initial-ttl-values">Initial TTL Values</h1>
+<p>Exemple come from hack the box, we see the TTL value is 128 so a host is windows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap 10.129.2.18 -sn -oA host -PE --packet-trace --disable-arp-ping
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Starting Nmap 7.80 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2020-06-15 00:12 CEST
 </span></span><span style="display:flex;"><span>SENT <span style="color:#f92672">(</span>0.0107s<span style="color:#f92672">)</span> ICMP <span style="color:#f92672">[</span>10.10.14.2 &gt; 10.129.2.18 Echo request <span style="color:#f92672">(</span>type<span style="color:#f92672">=</span>8/code<span style="color:#f92672">=</span>0<span style="color:#f92672">)</span> id<span style="color:#f92672">=</span><span style="color:#ae81ff">13607</span> seq<span style="color:#f92672">=</span>0<span style="color:#f92672">]</span> IP <span style="color:#f92672">[</span>ttl<span style="color:#f92672">=</span><span style="color:#ae81ff">255</span> id<span style="color:#f92672">=</span><span style="color:#ae81ff">23541</span> iplen<span style="color:#f92672">=</span><span style="color:#ae81ff">28</span> <span style="color:#f92672">]</span>
@@ -210,638 +102,536 @@
 </span></span><span style="display:flex;"><span>Host is up <span style="color:#f92672">(</span>0.086s latency<span style="color:#f92672">)</span>.
 </span></span><span style="display:flex;"><span>MAC Address: DE:AD:00:00:BE:EF
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 0.11 seconds
-</span></span></code></pre>
-                    </div>
-                    <p>
-                        The following table shows the default Initial TTL values
-                        of various operating systems and devices.
-                    </p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Device / OS</th>
-                                <th>Version</th>
-                                <th>Protocol</th>
-                                <th>TTL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>AIX</td>
-                                <td></td>
-                                <td>TCP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>AIX</td>
-                                <td></td>
-                                <td>UDP</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>Android</td>
-                                <td>3.2.1</td>
-                                <td>TCP and ICMP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>Android</td>
-                                <td>5.1.1</td>
-                                <td>TCP and ICMP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>AIX</td>
-                                <td>3.2, 4.1</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>BSDI</td>
-                                <td>BSD/OS 3.1 and 4.0</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>Compa</td>
-                                <td>Tru64 v5.0</td>
-                                <td>ICMP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>Cisco</td>
-                                <td></td>
-                                <td>ICMP</td>
-                                <td>254</td>
-                            </tr>
-                            <tr>
-                                <td>DEC Pathworks</td>
-                                <td>V5</td>
-                                <td>TCP and UDP</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>Foundry</td>
-                                <td></td>
-                                <td>ICMP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>FreeBSD</td>
-                                <td>2.1R</td>
-                                <td>TCP and UDP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>FreeBSD</td>
-                                <td>3.4, 4.0</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>FreeBSD</td>
-                                <td>5</td>
-                                <td>ICMP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>HP-UX</td>
-                                <td>9.0x</td>
-                                <td>TCP and UDP</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>HP-UX</td>
-                                <td>10.01</td>
-                                <td>TCP and UDP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>HP-UX</td>
-                                <td>10.2</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>HP-UX</td>
-                                <td>11</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>HP-UX</td>
-                                <td>11</td>
-                                <td>TCP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>Irix</td>
-                                <td>5.3</td>
-                                <td>TCP and UDP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>Irix</td>
-                                <td>6.x</td>
-                                <td>TCP and UDP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>Irix</td>
-                                <td>6.5.3, 6.5.8</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>Juniper</td>
-                                <td></td>
-                                <td>ICMP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>MPE/IX (HP)</td>
-                                <td></td>
-                                <td>ICMP</td>
-                                <td>200</td>
-                            </tr>
-                            <tr>
-                                <td>Linux</td>
-                                <td>2.0.x kernel</td>
-                                <td>ICMP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>Linux</td>
-                                <td>2.2.14 kernel</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>Linux</td>
-                                <td>2.4 kernel</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>Linux</td>
-                                <td>Red Hat 9</td>
-                                <td>ICMP and TCP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>MacOS/MacTCP</td>
-                                <td>2.0.x</td>
-                                <td>TCP and UDP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>MacOS/MacTCP</td>
-                                <td>X (10.5.6)</td>
-                                <td>ICMP/TCP/UDP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>NetBSD</td>
-                                <td></td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>Netgear FVG318</td>
-                                <td></td>
-                                <td>ICMP and UDP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>OpenBSD</td>
-                                <td>2.6 &amp; 2.7</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>OpenVMS</td>
-                                <td>07.01.2002</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>OS/2</td>
-                                <td>TCP/IP 3.0</td>
-                                <td></td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>OSF/1</td>
-                                <td>V3.2A</td>
-                                <td>TCP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>OSF/1</td>
-                                <td>V3.2A</td>
-                                <td>UDP</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>Solaris</td>
-                                <td>2.5.1, 2.6, 2.7, 2.8</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>Solaris</td>
-                                <td>2.8</td>
-                                <td>TCP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>Stratus</td>
-                                <td>TCP_OS</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>Stratus</td>
-                                <td>TCP_OS (14.2-)</td>
-                                <td>TCP and UDP</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>Stratus</td>
-                                <td>TCP_OS (14.3+)</td>
-                                <td>TCP and UDP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>Stratus</td>
-                                <td>STCP</td>
-                                <td>ICMP/TCP/UDP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>SunOS</td>
-                                <td>4.1.3/4.1.4</td>
-                                <td>TCP and UDP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>SunOS</td>
-                                <td>5.7</td>
-                                <td>ICMP and TCP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>Ultrix</td>
-                                <td>V4.1/V4.2A</td>
-                                <td>TCP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>Ultrix</td>
-                                <td>V4.1/V4.2A</td>
-                                <td>UDP</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>Ultrix</td>
-                                <td>V4.2 – 4.5</td>
-                                <td>ICMP</td>
-                                <td>255</td>
-                            </tr>
-                            <tr>
-                                <td>VMS/Multinet</td>
-                                <td></td>
-                                <td>TCP and UDP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>VMS/TCPware</td>
-                                <td></td>
-                                <td>TCP</td>
-                                <td>60</td>
-                            </tr>
-                            <tr>
-                                <td>VMS/TCPware</td>
-                                <td></td>
-                                <td>UDP</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>VMS/Wollongong</td>
-                                <td>1.1.1.1</td>
-                                <td>TCP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>VMS/Wollongong</td>
-                                <td>1.1.1.1</td>
-                                <td>UDP</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>VMS/UCX</td>
-                                <td></td>
-                                <td>TCP and UDP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>for Workgroups</td>
-                                <td>TCP and UDP</td>
-                                <td>32</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>95</td>
-                                <td>TCP and UDP</td>
-                                <td>32</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>98</td>
-                                <td>ICMP</td>
-                                <td>32</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>98, 98 SE</td>
-                                <td>ICMP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>98</td>
-                                <td>TCP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>NT 3.51</td>
-                                <td>TCP and UDP</td>
-                                <td>32</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>NT 4.0</td>
-                                <td>TCP and UDP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>NT 4.0 SP5-</td>
-                                <td></td>
-                                <td>32</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>NT 4.0 SP6+</td>
-                                <td></td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>NT 4 WRKS SP 3, SP 6a</td>
-                                <td>ICMP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>NT 4 Server SP4</td>
-                                <td>ICMP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>ME</td>
-                                <td>ICMP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>2000 pro</td>
-                                <td>ICMP/TCP/UDP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>2000 family</td>
-                                <td>ICMP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>Server 2003</td>
-                                <td></td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>XP</td>
-                                <td>ICMP/TCP/UDP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>Vista</td>
-                                <td>ICMP/TCP/UDP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>7</td>
-                                <td>ICMP/TCP/UDP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>Server 2008</td>
-                                <td>ICMP/TCP/UDP</td>
-                                <td>128</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>10</td>
-                                <td>ICMP/TCP/UDP</td>
-                                <td>128</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h1 id="port-scanning">Port Scanning</h1>
-                    <h2 id="port-states-ad-descriptions">
-                        Port States ad Descriptions
-                    </h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>State</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>open</td>
-                                <td>
-                                    This indicates that the connection to the
-                                    scanned port has been established. These
-                                    connections can be TCP connections, UDP
-                                    datagrams as well as SCTP associations.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-                                </td>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>closed</td>
-                                <td>
-                                    When the port is shown as closed, the TCP
-                                    protocol indicates that the packet we
-                                    received back contains an RST flag. This
-                                    scanning method can also be used to
-                                    determine if our target is alive or not.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-                                </td>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>filtered</td>
-                                <td>
-                                    Nmap cannot correctly identify whether the
-                                    scanned port is open or closed because
-                                    either no response is returned from the
-                                    target for the port or we get an error code
-                                    from the target.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-                                </td>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>unfiltered</td>
-                                <td>
-                                    This state of a port only occurs during the
-                                    TCP-ACK scan and means that the port is
-                                    accessible, but it cannot be determined
-                                    whether it is open or closed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-                                </td>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>open|filtered</td>
-                                <td>
-                                    If we do not get a response for a specific
-                                    port, Nmap will set it to that state. This
-                                    indicates that a firewall or packet filter
-                                    may protect the port.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-                                </td>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>closed|filtered</td>
-                                <td>
-                                    This state only occurs in the IP ID idle
-                                    scans and indicates that it was impossible
-                                    to determine if the scanned port is closed
-                                    or filtered by a firewall.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-                                </td>
-                                <td>
-                                    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h2 id="filtered-ports">Filtered Ports</h2>
-                    <p>Tips:</p>
-                    <ul>
-                        <li>
-                            Check time to response (slow response =&gt; filtered
-                            port)
-                        </li>
-                        <li>
-                            Check with <code>--packet-trace</code> option to see
-                            the packets sent and received (error message =&gt;
-                            filtered port)
-                        </li>
-                    </ul>
-                    <h2 id="port-scan">Port Scan</h2>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap <span style="color:#f92672">[</span>ip<span style="color:#f92672">]</span> -p <span style="color:#f92672">[</span>port<span style="color:#f92672">]</span> --packet-trace -Pn -n --disable-arp-ping
-</span></span></code></pre>
-                    </div>
-                    <p>Arguments:</p>
-                    <ul>
-                        <li><code>-p</code> =&gt; Port</li>
-                        <li>
-                            <code>--packet-trace</code> =&gt; Shows all packets
-                            sent and received
-                        </li>
-                        <li><code>-Pn</code> =&gt; No ping</li>
-                        <li>
-                            <code>-n</code> =&gt; No DNS resolution
-                            (Performance, Privacy, Accuracy and Network
-                            Restrictions)
-                        </li>
-                        <li>
-                            <code>--disable-arp-ping</code> =&gt; Disables ARP
-                            ping
-                        </li>
-                    </ul>
-                    <h3 id="tcp-connect-scan--st">TCP connect scan (-sT)</h3>
-                    <p>Exemple come to hack the box:</p>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap 10.129.2.28 -p <span style="color:#ae81ff">443</span> --packet-trace --disable-arp-ping -Pn -n --reason -sT
+</span></span></code></pre></div><p>The following table shows the default Initial TTL values of various operating systems and devices.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Device / OS</th>
+          <th>Version</th>
+          <th>Protocol</th>
+          <th>TTL</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AIX</td>
+          <td></td>
+          <td>TCP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>AIX</td>
+          <td></td>
+          <td>UDP</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>Android</td>
+          <td>3.2.1</td>
+          <td>TCP and ICMP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>Android</td>
+          <td>5.1.1</td>
+          <td>TCP and ICMP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>AIX</td>
+          <td>3.2, 4.1</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>BSDI</td>
+          <td>BSD/OS 3.1 and 4.0</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>Compa</td>
+          <td>Tru64 v5.0</td>
+          <td>ICMP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>Cisco</td>
+          <td></td>
+          <td>ICMP</td>
+          <td>254</td>
+      </tr>
+      <tr>
+          <td>DEC Pathworks</td>
+          <td>V5</td>
+          <td>TCP and UDP</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>Foundry</td>
+          <td></td>
+          <td>ICMP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>FreeBSD</td>
+          <td>2.1R</td>
+          <td>TCP and UDP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>FreeBSD</td>
+          <td>3.4, 4.0</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>FreeBSD</td>
+          <td>5</td>
+          <td>ICMP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>HP-UX</td>
+          <td>9.0x</td>
+          <td>TCP and UDP</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>HP-UX</td>
+          <td>10.01</td>
+          <td>TCP and UDP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>HP-UX</td>
+          <td>10.2</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>HP-UX</td>
+          <td>11</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>HP-UX</td>
+          <td>11</td>
+          <td>TCP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>Irix</td>
+          <td>5.3</td>
+          <td>TCP and UDP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>Irix</td>
+          <td>6.x</td>
+          <td>TCP and UDP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>Irix</td>
+          <td>6.5.3, 6.5.8</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>Juniper</td>
+          <td></td>
+          <td>ICMP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>MPE/IX (HP)</td>
+          <td></td>
+          <td>ICMP</td>
+          <td>200</td>
+      </tr>
+      <tr>
+          <td>Linux</td>
+          <td>2.0.x kernel</td>
+          <td>ICMP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>Linux</td>
+          <td>2.2.14 kernel</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>Linux</td>
+          <td>2.4 kernel</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>Linux</td>
+          <td>Red Hat 9</td>
+          <td>ICMP and TCP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>MacOS/MacTCP</td>
+          <td>2.0.x</td>
+          <td>TCP and UDP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>MacOS/MacTCP</td>
+          <td>X (10.5.6)</td>
+          <td>ICMP/TCP/UDP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>NetBSD</td>
+          <td></td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>Netgear FVG318</td>
+          <td></td>
+          <td>ICMP and UDP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>OpenBSD</td>
+          <td>2.6 &amp; 2.7</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>OpenVMS</td>
+          <td>07.01.2002</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>OS/2</td>
+          <td>TCP/IP 3.0</td>
+          <td></td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>OSF/1</td>
+          <td>V3.2A</td>
+          <td>TCP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>OSF/1</td>
+          <td>V3.2A</td>
+          <td>UDP</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>Solaris</td>
+          <td>2.5.1, 2.6, 2.7, 2.8</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>Solaris</td>
+          <td>2.8</td>
+          <td>TCP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>Stratus</td>
+          <td>TCP_OS</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>Stratus</td>
+          <td>TCP_OS (14.2-)</td>
+          <td>TCP and UDP</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>Stratus</td>
+          <td>TCP_OS (14.3+)</td>
+          <td>TCP and UDP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>Stratus</td>
+          <td>STCP</td>
+          <td>ICMP/TCP/UDP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>SunOS</td>
+          <td>4.1.3/4.1.4</td>
+          <td>TCP and UDP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>SunOS</td>
+          <td>5.7</td>
+          <td>ICMP and TCP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>Ultrix</td>
+          <td>V4.1/V4.2A</td>
+          <td>TCP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>Ultrix</td>
+          <td>V4.1/V4.2A</td>
+          <td>UDP</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>Ultrix</td>
+          <td>V4.2 – 4.5</td>
+          <td>ICMP</td>
+          <td>255</td>
+      </tr>
+      <tr>
+          <td>VMS/Multinet</td>
+          <td></td>
+          <td>TCP and UDP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>VMS/TCPware</td>
+          <td></td>
+          <td>TCP</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>VMS/TCPware</td>
+          <td></td>
+          <td>UDP</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td>VMS/Wollongong</td>
+          <td>1.1.1.1</td>
+          <td>TCP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>VMS/Wollongong</td>
+          <td>1.1.1.1</td>
+          <td>UDP</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>VMS/UCX</td>
+          <td></td>
+          <td>TCP and UDP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>for Workgroups</td>
+          <td>TCP and UDP</td>
+          <td>32</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>95</td>
+          <td>TCP and UDP</td>
+          <td>32</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>98</td>
+          <td>ICMP</td>
+          <td>32</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>98, 98 SE</td>
+          <td>ICMP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>98</td>
+          <td>TCP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>NT 3.51</td>
+          <td>TCP and UDP</td>
+          <td>32</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>NT 4.0</td>
+          <td>TCP and UDP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>NT 4.0 SP5-</td>
+          <td></td>
+          <td>32</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>NT 4.0 SP6+</td>
+          <td></td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>NT 4 WRKS SP 3, SP 6a</td>
+          <td>ICMP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>NT 4 Server SP4</td>
+          <td>ICMP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>ME</td>
+          <td>ICMP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>2000 pro</td>
+          <td>ICMP/TCP/UDP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>2000 family</td>
+          <td>ICMP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>Server 2003</td>
+          <td></td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>XP</td>
+          <td>ICMP/TCP/UDP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>Vista</td>
+          <td>ICMP/TCP/UDP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>7</td>
+          <td>ICMP/TCP/UDP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>Server 2008</td>
+          <td>ICMP/TCP/UDP</td>
+          <td>128</td>
+      </tr>
+      <tr>
+          <td>Windows</td>
+          <td>10</td>
+          <td>ICMP/TCP/UDP</td>
+          <td>128</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="port-scanning">Port Scanning</h1>
+<h2 id="port-states-ad-descriptions">Port States ad Descriptions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>State</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>open</td>
+          <td>This indicates that the connection to the scanned port has been established. These connections can be TCP connections, UDP datagrams as well as SCTP associations.</td>
+      </tr>
+      <tr>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+      </tr>
+      <tr>
+          <td>closed</td>
+          <td>When the port is shown as closed, the TCP protocol indicates that the packet we received back contains an RST flag. This scanning method can also be used to determine if our target is alive or not.</td>
+      </tr>
+      <tr>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+      </tr>
+      <tr>
+          <td>filtered</td>
+          <td>Nmap cannot correctly identify whether the scanned port is open or closed because either no response is returned from the target for the port or we get an error code from the target.</td>
+      </tr>
+      <tr>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+      </tr>
+      <tr>
+          <td>unfiltered</td>
+          <td>This state of a port only occurs during the TCP-ACK scan and means that the port is accessible, but it cannot be determined whether it is open or closed.</td>
+      </tr>
+      <tr>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+      </tr>
+      <tr>
+          <td>open|filtered</td>
+          <td>If we do not get a response for a specific port, Nmap will set it to that state. This indicates that a firewall or packet filter may protect the port.</td>
+      </tr>
+      <tr>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+      </tr>
+      <tr>
+          <td>closed|filtered</td>
+          <td>This state only occurs in the IP ID idle scans and indicates that it was impossible to determine if the scanned port is closed or filtered by a firewall.</td>
+      </tr>
+      <tr>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+          <td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="filtered-ports">Filtered Ports</h2>
+<p>Tips:</p>
+<ul>
+<li>Check time to response (slow response =&gt; filtered port)</li>
+<li>Check with <code>--packet-trace</code> option to see the packets sent and received (error message =&gt; filtered port)</li>
+</ul>
+<h2 id="port-scan">Port Scan</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap <span style="color:#f92672">[</span>ip<span style="color:#f92672">]</span> -p <span style="color:#f92672">[</span>port<span style="color:#f92672">]</span> --packet-trace -Pn -n --disable-arp-ping
+</span></span></code></pre></div><p>Arguments:</p>
+<ul>
+<li><code>-p</code> =&gt; Port</li>
+<li><code>--packet-trace</code> =&gt; Shows all packets sent and received</li>
+<li><code>-Pn</code> =&gt; No ping</li>
+<li><code>-n</code> =&gt; No DNS resolution (Performance, Privacy, Accuracy and Network Restrictions)</li>
+<li><code>--disable-arp-ping</code> =&gt; Disables ARP ping</li>
+</ul>
+<h3 id="tcp-connect-scan--st">TCP connect scan (-sT)</h3>
+<p>Exemple come to hack the box:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap 10.129.2.28 -p <span style="color:#ae81ff">443</span> --packet-trace --disable-arp-ping -Pn -n --reason -sT
 </span></span><span style="display:flex;"><span>Starting Nmap 7.80 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2020-06-15 16:26 CET
 </span></span><span style="display:flex;"><span>CONN <span style="color:#f92672">(</span>0.0385s<span style="color:#f92672">)</span> TCP localhost &gt; 10.129.2.28:443 <span style="color:#f92672">=</span>&gt; Operation now in progress
 </span></span><span style="display:flex;"><span>CONN <span style="color:#f92672">(</span>0.0396s<span style="color:#f92672">)</span> TCP localhost &gt; 10.129.2.28:443 <span style="color:#f92672">=</span>&gt; Connected
@@ -852,21 +642,9 @@
 </span></span><span style="display:flex;"><span>443/tcp open  https   syn-ack
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 0.04 seconds
-</span></span></code></pre>
-                    </div>
-                    <h3 id="udp-scan--su">UDP Scan (-sU)</h3>
-                    <p>Exemple to UDP scan:</p>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap <span style="color:#f92672">[</span>ip<span style="color:#f92672">]</span> -F -sU
+</span></span></code></pre></div><h3 id="udp-scan--su">UDP Scan (-sU)</h3>
+<p>Exemple to UDP scan:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap <span style="color:#f92672">[</span>ip<span style="color:#f92672">]</span> -F -sU
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Starting Nmap 7.80 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2020-06-15 16:01 CEST
 </span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> <span style="color:#f92672">[</span>ip<span style="color:#f92672">]</span>
@@ -881,210 +659,95 @@
 </span></span><span style="display:flex;"><span>MAC Address: <span style="color:#f92672">[</span>mac addr<span style="color:#f92672">]</span> <span style="color:#f92672">([</span>constructor<span style="color:#f92672">])</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 98.07 seconds
-</span></span></code></pre>
-                    </div>
-                    <p>With option <code>--pack-trace</code>:</p>
-                    <ul>
-                        <li><code>open</code> =&gt; if we get a response</li>
-                        <li>
-                            <code>closed</code> =&gt; ICMP response with error
-                            code 3 (port unreachable)
-                        </li>
-                        <li>
-                            <code>open|filtered</code> =&gt; for all other ICMP
-                            responses
-                        </li>
-                    </ul>
-                    <h3 id="version-scan--sv">Version Scan (-sV)</h3>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap <span style="color:#f92672">[</span>ip<span style="color:#f92672">]</span> -Pn -n --disable-arp-ping --packet-trace -p <span style="color:#f92672">[</span>port<span style="color:#f92672">]</span> --reason  -sV
-</span></span></code></pre>
-                    </div>
-                    <h1 id="saving-data">Saving data</h1>
-                    <ul>
-                        <li>
-                            Normal output (<code>-oN</code>) with the
-                            <code>.nmap</code> file extension
-                        </li>
-                        <li>
-                            Grepable output (<code>-oG</code>) with the
-                            <code>.gnmap</code> file extension
-                        </li>
-                        <li>
-                            XML output (<code>-oX</code>) with the
-                            <code>.xml</code> file extension
-                        </li>
-                    </ul>
-                    <p>For convert XML to HTML:</p>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xsltproc target.xml -o target.html
-</span></span></code></pre>
-                    </div>
-                    <h1 id="nmap-scripting-engine">Nmap Scripting Engine</h1>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>auth</td>
-                                <td>
-                                    Determination of authentication credentials.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>broadcast</td>
-                                <td>
-                                    Scripts, which are used for host discovery
-                                    by broadcasting and the discovered hosts,
-                                    can be automatically added to the remaining
-                                    scans.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>brute</td>
-                                <td>
-                                    Executes scripts that try to log in to the
-                                    respective service by brute-forcing with
-                                    credentials.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>default</td>
-                                <td>
-                                    Default scripts executed by using the -sC
-                                    option.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>discovery</td>
-                                <td>Evaluation of accessible services.</td>
-                            </tr>
-                            <tr>
-                                <td>dos</td>
-                                <td>
-                                    These scripts are used to check services for
-                                    denial of service vulnerabilities and are
-                                    used less as it harms the services.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>exploit</td>
-                                <td>
-                                    This category of scripts tries to exploit
-                                    known vulnerabilities for the scanned port.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>external</td>
-                                <td>
-                                    Scripts that use external services for
-                                    further processing.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>fuzzer</td>
-                                <td>
-                                    This uses scripts to identify
-                                    vulnerabilities and unexpected packet
-                                    handling by sending different fields, which
-                                    can take much time.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>intrusive</td>
-                                <td>
-                                    Intrusive scripts that could negatively
-                                    affect the target system.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>malware</td>
-                                <td>
-                                    Checks if some malware infects the target
-                                    system.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>safe</td>
-                                <td>
-                                    Defensive scripts that do not perform
-                                    intrusive and destructive access.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>version</td>
-                                <td>Extension for service detection.</td>
-                            </tr>
-                            <tr>
-                                <td>vuln</td>
-                                <td>
-                                    Identification of specific vulnerabilities.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap &lt;target&gt; --script &lt;script-name&gt;,&lt;script-name&gt;,...
-</span></span></code></pre>
-                    </div>
-                    <p>Usefull scripts:</p>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap &lt;target&gt; --script vuln
-</span></span></code></pre>
-                    </div>
-                    <p>Tip for my self: look at in <code>robot.txt</code></p>
-                    <p>Exemple come from hack the box:</p>
-                    <div class="highlight">
-                        <pre
-                            tabindex="0"
-                            style="
-                                color: #f8f8f2;
-                                background-color: #272822;
-                                -moz-tab-size: 4;
-                                -o-tab-size: 4;
-                                tab-size: 4;
-                            "
-                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap 10.129.2.28 -p <span style="color:#ae81ff">80</span> -sV --script vuln
+</span></span></code></pre></div><p>With option <code>--pack-trace</code>:</p>
+<ul>
+<li><code>open</code> =&gt; if we get a response</li>
+<li><code>closed</code> =&gt; ICMP response with error code 3 (port unreachable)</li>
+<li><code>open|filtered</code> =&gt; for all other ICMP responses</li>
+</ul>
+<h3 id="version-scan--sv">Version Scan (-sV)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap <span style="color:#f92672">[</span>ip<span style="color:#f92672">]</span> -Pn -n --disable-arp-ping --packet-trace -p <span style="color:#f92672">[</span>port<span style="color:#f92672">]</span> --reason  -sV
+</span></span></code></pre></div><h1 id="saving-data">Saving data</h1>
+<ul>
+<li>Normal output (<code>-oN</code>) with the <code>.nmap</code> file extension</li>
+<li>Grepable output (<code>-oG</code>) with the <code>.gnmap</code> file extension</li>
+<li>XML output (<code>-oX</code>) with the <code>.xml</code> file extension</li>
+</ul>
+<p>For convert XML to HTML:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xsltproc target.xml -o target.html
+</span></span></code></pre></div><h1 id="nmap-scripting-engine">Nmap Scripting Engine</h1>
+<table>
+  <thead>
+      <tr>
+          <th>Category</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>auth</td>
+          <td>Determination of authentication credentials.</td>
+      </tr>
+      <tr>
+          <td>broadcast</td>
+          <td>Scripts, which are used for host discovery by broadcasting and the discovered hosts, can be automatically added to the remaining scans.</td>
+      </tr>
+      <tr>
+          <td>brute</td>
+          <td>Executes scripts that try to log in to the respective service by brute-forcing with credentials.</td>
+      </tr>
+      <tr>
+          <td>default</td>
+          <td>Default scripts executed by using the -sC option.</td>
+      </tr>
+      <tr>
+          <td>discovery</td>
+          <td>Evaluation of accessible services.</td>
+      </tr>
+      <tr>
+          <td>dos</td>
+          <td>These scripts are used to check services for denial of service vulnerabilities and are used less as it harms the services.</td>
+      </tr>
+      <tr>
+          <td>exploit</td>
+          <td>This category of scripts tries to exploit known vulnerabilities for the scanned port.</td>
+      </tr>
+      <tr>
+          <td>external</td>
+          <td>Scripts that use external services for further processing.</td>
+      </tr>
+      <tr>
+          <td>fuzzer</td>
+          <td>This uses scripts to identify vulnerabilities and unexpected packet handling by sending different fields, which can take much time.</td>
+      </tr>
+      <tr>
+          <td>intrusive</td>
+          <td>Intrusive scripts that could negatively affect the target system.</td>
+      </tr>
+      <tr>
+          <td>malware</td>
+          <td>Checks if some malware infects the target system.</td>
+      </tr>
+      <tr>
+          <td>safe</td>
+          <td>Defensive scripts that do not perform intrusive and destructive access.</td>
+      </tr>
+      <tr>
+          <td>version</td>
+          <td>Extension for service detection.</td>
+      </tr>
+      <tr>
+          <td>vuln</td>
+          <td>Identification of specific vulnerabilities.</td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap &lt;target&gt; --script &lt;script-name&gt;,&lt;script-name&gt;,...
+</span></span></code></pre></div><p>Usefull scripts:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap &lt;target&gt; --script vuln
+</span></span></code></pre></div><p>Tip for my self: look at in <code>robot.txt</code></p>
+<p>Exemple come from hack the box:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap 10.129.2.28 -p <span style="color:#ae81ff">80</span> -sV --script vuln
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> 10.129.2.28
 </span></span><span style="display:flex;"><span>Host is up <span style="color:#f92672">(</span>0.036s latency<span style="color:#f92672">)</span>.
@@ -1113,118 +776,75 @@
 </span></span><span style="display:flex;"><span>|     	CVE-2018-1312	6.8	https://vulners.com/cve/CVE-2018-1312
 </span></span><span style="display:flex;"><span>|     	CVE-2017-15715	6.8	https://vulners.com/cve/CVE-2017-15715
 </span></span><span style="display:flex;"><span>&lt;SNIP&gt;
-</span></span></code></pre>
-                    </div>
-                    <h1 id="interesting-flags">Interesting flags</h1>
-                    <ul>
-                        <li>
-                            <code>--stats-every=5s</code> Shows the progress of
-                            the scan every 5 seconds.
-                        </li>
-                    </ul>
-                    <h1 id="reference">Reference</h1>
-                    <ul>
-                        <li>
-                            <a
-                                href="https://nmap.org/book/host-discovery-strategies.html"
-                                >nmap man host discovery strat</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="https://nmap.org/book/scan-methods-connect-scan.html"
-                                >scan methods connect scan</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="https://nmap.org/book/man-port-scanning-techniques.html"
-                                >man port scanning techniques</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://nmap.org/book/output.html"
-                                >nmap format output</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://nmap.org/nsedoc/index.html"
-                                >Nmap Scripting Engine (NSE)</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="https://nmap.org/book/performance-timing-templates.html"
-                                >Performance timing templates</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <footer class="content__footer"></footer>
+</span></span></code></pre></div><h1 id="interesting-flags">Interesting flags</h1>
+<ul>
+<li><code>--stats-every=5s</code> 	Shows the progress of the scan every 5 seconds.</li>
+</ul>
+<h1 id="reference">Reference</h1>
+<ul>
+<li><a href="https://nmap.org/book/host-discovery-strategies.html">nmap man host discovery strat</a></li>
+<li><a href="https://nmap.org/book/scan-methods-connect-scan.html">scan methods connect scan</a></li>
+<li><a href="https://nmap.org/book/man-port-scanning-techniques.html">man port scanning techniques</a></li>
+<li><a href="https://nmap.org/book/output.html">nmap format output</a></li>
+<li><a href="https://nmap.org/nsedoc/index.html">Nmap Scripting Engine (NSE)</a></li>
+<li><a href="https://nmap.org/book/performance-timing-templates.html">Performance timing templates</a></li>
+</ul>
+
+    </div>
+    <footer class="content__footer"></footer>
+
             </section>
 
             <section class="page__aside">
                 <div class="aside__about">
-                    <div class="aside__about">
-                        <h1 class="about__title">Segfault45</h1>
-                        <p class="about__description">
-                            Une voiture aux roues carrées pourra rouler sur une
-                            route au revêtement composé de tronçons de cosinus
-                            hyperboliques (une citation volée).
-                        </p>
-                    </div>
+<div class="aside__about">
+    
+    
+<h1 class="about__title">Segfault45</h1>
+<p class="about__description">Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée).</p>
+</div>
 
-                    <ul class="aside__social-links">
-                        <li>
-                            <a
-                                href="https://github.com/PantaRhei"
-                                rel="me"
-                                aria-label="GitHub"
-                                title="GitHub"
-                                ><i
-                                    class="fa-brands fa-github"
-                                    aria-hidden="true"
-                                ></i></a
-                            >&nbsp;
-                        </li>
 
-                        <li>
-                            <a
-                                href="mailto:segfault45@segfault45.com"
-                                rel="me"
-                                aria-label="Email"
-                                title="Email"
-                                ><i
-                                    class="fa-solid fa-envelope"
-                                    aria-hidden="true"
-                                ></i></a
-                            >&nbsp;
-                        </li>
-                    </ul>
-                </div>
-                <hr />
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/PantaRhei" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:segfault45@segfault45.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
                 <div class="aside__content">
-                    <p>2025-03-18</p>
+    
+    
+        <p>
+            
+            2025-03-18
+        </p>
+    
+
+    
+
                 </div>
             </section>
 
-            <footer class="page__footer">
-                <p>
-                    <br /><span class="active"><br /><b></b></span><br />
-                </p>
-                <br /><br />
-                <p class="copyright">
-                    © <a href="https://joeroe.io">void void</a> &amp;
-                    <a
-                        href="https://github.com/joeroe/risotto/graphs/contributors"
-                        >void</a
-                    >.
-                </p>
-                <p class="advertisement">
-                    Powered by <a href="https://gohugo.io/">hugo</a> and
-                    <a href="https://github.com/joeroe/risotto">risotto</a>.
-                </p>
-            </footer>
+            <footer class="page__footer"><p>
+                        
+    <br /><span class="active"><br /><b></b></span
+    ><br />
+
+       
+</p>
+<br /><br />
+<p class="copyright">© <a href="https://joeroe.io">void void</a> &amp; <a href="https://github.com/joeroe/risotto/graphs/contributors">void</a>.</p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
         </div>
     </body>
+
 </html>
