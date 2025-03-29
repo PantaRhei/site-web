@@ -1,18 +1,9 @@
-# Creation
-
-```bash
-hugo new site quickstart
-cd quickstart
-git init
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
-echo "theme = 'ananke'" >> hugo.toml
-hugo server
-```
-
-# Run server
+# Run server in local
 
 ```bash
 hugo server
 ##or for draft
 hugo server -D
 ```
+
+Enter the following URL in your browser: [http://localhost:1313](http://localhost:1313)
