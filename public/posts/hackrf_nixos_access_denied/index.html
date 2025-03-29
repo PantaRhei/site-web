@@ -1,75 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <title>Hackrf one Nixos access denied &ndash; Segfault45</title>
+        <meta
+            name="description"
+            content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). "
+        />
 
-    <head><title>Hackrf one Nixos access denied &ndash; Segfault45</title>
-<meta name="description" content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). ">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css"
+            integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/risotto.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/custom.css">
-
-
-
-
-
-
-
-
-
-
-</head>
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/risotto.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/custom.css"
+        />
+    </head>
 
     <body>
         <div class="page">
+            <header class="page__header">
+                <nav class="page__nav main-nav">
+                    <ul>
+                        <li class="nomarker">
+                            <h1 class="page__logo">
+                                <a
+                                    href="https://pantarhei.github.io/site-web/public/index.html"
+                                    class="page__logo-inner"
+                                    >Segfault45</a
+                                >
+                            </h1>
+                        </li>
 
-            <header class="page__header"><nav class="page__nav main-nav">
-    <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="https://pantarhei.github.io/site-web/public/" class="page__logo-inner">Segfault45</a></h1></li>
-    
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/about/" title="">About</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/cheat_sheet/" title="">Cheat sheet</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/links/" title="">Links</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/posts/" title="">Posts</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/radio/" title="">Radio</a></li>
-    
-    </ul>
-</nav>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/about/"
+                                title=""
+                                >About</a
+                            >
+                        </li>
 
-</header>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/cheat_sheet/"
+                                title=""
+                                >Cheat sheet</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/links/"
+                                title=""
+                                >Links</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/posts/"
+                                title=""
+                                >Posts</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/radio/"
+                                title=""
+                                >Radio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
             <section class="page__body">
-    <header class="content__header">
-        <h1>Hackrf one Nixos access denied</h1>
-    </header>
-    <div class="content__body">
-        <p>If you use a hackrf one on nixos, you may be have this message:</p>
-<pre tabindex="0"><code>[segfault45@nixos:~]$ hackrf_info
+                <header class="content__header">
+                    <h1>Hackrf one Nixos access denied</h1>
+                </header>
+                <div class="content__body">
+                    <p>
+                        If you use a hackrf one on nixos, you may be have this
+                        message:
+                    </p>
+                    <pre tabindex="0"><code>[segfault45@nixos:~]$ hackrf_info
 hackrf_info version: 2024.02.1
 libhackrf version: 2024.02.1 (0.9)
 Found HackRF
 Index: 0
 hackrf_open() failed: Access denied (insufficient permissions) (-1000)
-</code></pre><p>For solve this problem you need add user to
-<code>plugdev</code> group, active hackrf hardware and
-install pakage.</p>
-<p>You have config exemple:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>users<span style="color:#f92672">.</span>users<span style="color:#f92672">.</span>your_name <span style="color:#f92672">=</span> {
+</code></pre>
+                    <p>
+                        For solve this problem you need add user to
+                        <code>plugdev</code> group, active hackrf hardware and
+                        install pakage.
+                    </p>
+                    <p>You have config exemple:</p>
+                    <div class="highlight">
+                        <pre
+                            tabindex="0"
+                            style="
+                                color: #f8f8f2;
+                                background-color: #272822;
+                                -moz-tab-size: 4;
+                                -o-tab-size: 4;
+                                tab-size: 4;
+                            "
+                        ><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>users<span style="color:#f92672">.</span>users<span style="color:#f92672">.</span>your_name <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>  isNormalUser <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
 </span></span><span style="display:flex;"><span>  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;your_name&#34;</span>;
 </span></span><span style="display:flex;"><span>  extraGroups <span style="color:#f92672">=</span> [ <span style="color:#e6db74">&#34;networkmanager&#34;</span> <span style="color:#e6db74">&#34;wheel&#34;</span>  <span style="color:#e6db74">&#34;plugdev&#34;</span>];<span style="color:#75715e">#adding user to plugdev group</span>
@@ -86,9 +152,14 @@ install pakage.</p>
 </span></span><span style="display:flex;"><span>environment<span style="color:#f92672">.</span>systemPackages <span style="color:#f92672">=</span> <span style="color:#66d9ef">with</span> pkgs; [
 </span></span><span style="display:flex;"><span>    hackrf
 </span></span><span style="display:flex;"><span>  ];
-</span></span></code></pre></div><p>After do <code>nixos-rebuild switch</code>, you need reboot your computer.</p>
-<p>And, it&rsquo;s work:</p>
-<pre tabindex="0"><code>[segfault45@nixos:~]$ hackrf_info
+</span></span></code></pre>
+                    </div>
+                    <p>
+                        After do <code>nixos-rebuild switch</code>, you need
+                        reboot your computer.
+                    </p>
+                    <p>And, it&rsquo;s work:</p>
+                    <pre tabindex="0"><code>[segfault45@nixos:~]$ hackrf_info
 hackrf_info version: 0000.13.32
 libhackrf version: 0000.13.32 (0.9)
 Found HackRF
@@ -101,63 +172,74 @@ Hardware Revision: r9
 Hardware appears to have been manufactured by Great Scott Gadgets.
 Hardware supported by installed firmware:
     HackRF One
-</code></pre><p><img src="/images/meme1.jpg" alt="meme"></p>
-
-    </div>
-    <footer class="content__footer"></footer>
-
+</code></pre>
+                    <p><img src="/images/meme1.jpg" alt="meme" /></p>
+                </div>
+                <footer class="content__footer"></footer>
             </section>
 
             <section class="page__aside">
                 <div class="aside__about">
-<div class="aside__about">
-    
-    
-<h1 class="about__title">Segfault45</h1>
-<p class="about__description">Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée).</p>
-</div>
+                    <div class="aside__about">
+                        <h1 class="about__title">Segfault45</h1>
+                        <p class="about__description">
+                            Une voiture aux roues carrées pourra rouler sur une
+                            route au revêtement composé de tronçons de cosinus
+                            hyperboliques (une citation volée).
+                        </p>
+                    </div>
 
+                    <ul class="aside__social-links">
+                        <li>
+                            <a
+                                href="https://github.com/PantaRhei"
+                                rel="me"
+                                aria-label="GitHub"
+                                title="GitHub"
+                                ><i
+                                    class="fa-brands fa-github"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
 
-<ul class="aside__social-links">
-    
-    <li>
-        <a href="https://github.com/PantaRhei" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-    <li>
-        <a href="mailto:segfault45@segfault45.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-</ul>
-</div>
-                <hr>
+                        <li>
+                            <a
+                                href="mailto:segfault45@segfault45.com"
+                                rel="me"
+                                aria-label="Email"
+                                title="Email"
+                                ><i
+                                    class="fa-solid fa-envelope"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
+                    </ul>
+                </div>
+                <hr />
                 <div class="aside__content">
-    
-    
-        <p>
-            
-            2023-11-21
-        </p>
-    
-
-    
-
+                    <p>2023-11-21</p>
                 </div>
             </section>
 
-            <footer class="page__footer"><p>
-                        
-    <br /><span class="active"><br /><b></b></span
-    ><br />
-
-       
-</p>
-<br /><br />
-<p class="copyright">© <a href="https://joeroe.io">void void</a> &amp; <a href="https://github.com/joeroe/risotto/graphs/contributors">void</a>.</p>
-<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
-</footer>
-
+            <footer class="page__footer">
+                <p>
+                    <br /><span class="active"><br /><b></b></span><br />
+                </p>
+                <br /><br />
+                <p class="copyright">
+                    © <a href="https://joeroe.io">void void</a> &amp;
+                    <a
+                        href="https://github.com/joeroe/risotto/graphs/contributors"
+                        >void</a
+                    >.
+                </p>
+                <p class="advertisement">
+                    Powered by <a href="https://gohugo.io/">hugo</a> and
+                    <a href="https://github.com/joeroe/risotto">risotto</a>.
+                </p>
+            </footer>
         </div>
     </body>
-
 </html>

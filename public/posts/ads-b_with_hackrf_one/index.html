@@ -1,144 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <title>Lire les ADS-B avec un hackRF One &ndash; Segfault45</title>
+        <meta
+            name="description"
+            content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). "
+        />
 
-    <head><title>Lire les ADS-B avec un hackRF One &ndash; Segfault45</title>
-<meta name="description" content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). ">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css"
+            integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/risotto.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/custom.css">
-
-
-
-
-
-
-
-
-
-
-</head>
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/risotto.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/custom.css"
+        />
+    </head>
 
     <body>
         <div class="page">
+            <header class="page__header">
+                <nav class="page__nav main-nav">
+                    <ul>
+                        <li class="nomarker">
+                            <h1 class="page__logo">
+                                <a
+                                    href="https://pantarhei.github.io/site-web/public/index.html"
+                                    class="page__logo-inner"
+                                    >Segfault45</a
+                                >
+                            </h1>
+                        </li>
 
-            <header class="page__header"><nav class="page__nav main-nav">
-    <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="https://pantarhei.github.io/site-web/public/" class="page__logo-inner">Segfault45</a></h1></li>
-    
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/about/" title="">About</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/cheat_sheet/" title="">Cheat sheet</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/links/" title="">Links</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/posts/" title="">Posts</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/radio/" title="">Radio</a></li>
-    
-    </ul>
-</nav>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/about/"
+                                title=""
+                                >About</a
+                            >
+                        </li>
 
-</header>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/cheat_sheet/"
+                                title=""
+                                >Cheat sheet</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/links/"
+                                title=""
+                                >Links</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/posts/"
+                                title=""
+                                >Posts</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/radio/"
+                                title=""
+                                >Radio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
             <section class="page__body">
-    <header class="content__header">
-        <h1>Lire les ADS-B avec un hackRF One</h1>
-    </header>
-    <div class="content__body">
-        <h1 id="introduction">Introduction</h1>
-<p>Si vous avez un HackRF One et que vous voulez lire les signaux ADS-B,
-il est possible que vous ayez des difficultés à trouver un logiciel.
-Le logiciel le plus connu pour lire les signaux ADS-B est dump1090.</p>
-<p>Sur le github officiel de dump1090, on se renconte très rapidement
-que le HackRF One n&rsquo;est pas pris en charge. Cependant, il existe
-un fork sur ce <a href="https://github.com/esuldin/dump1090">github</a>.</p>
-<p>Je vous conseille très fortement d&rsquo;utiliser debian ou une distribution
-qui est basé sur debian.</p>
-<h1 id="antenne">Antenne</h1>
-<h1 id="fonctionnement-de-dump1090">Fonctionnement de dump1090</h1>
-<p>Dans notre cas nous allons utiliser le mode <code>--interactive</code> qui permet
-d&rsquo;afficher les informations des avions en temps réel.
-Pour cela, il suffit de lancer la commande suivante:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./dump1090 --interactive
-</span></span></code></pre></div><p>(Pour les restes je vous invite à vous référer à la documentation)</p>
-<p><img src="/images/dump1090.png" alt="Resultat de la commande"></p>
-<p>Sur l&rsquo;image ci-dessus, on peut voir les informations des transponteur
-d&rsquo;avions qui sont capturé par le HackRF One. On peut voir dans la colonne
-<code>Flight</code>l&rsquo;identifiant de l&rsquo;avion. Dans les colonnes suivant on a
-d&rsquo;autres informations comme la vitesse, l&rsquo;altitude, la position.</p>
-<p><img src="/images/fr1.png" alt="Resultat de la commande">
-<img src="/images/fr2.png" alt="Resultat de la commande"></p>
-<p>Bien entendu quand j&rsquo;ai écrit cet article, un seul avion est
-à la portée de mon antenne (comme par hazard).</p>
-
-    </div>
-    <footer class="content__footer"></footer>
-
+                <header class="content__header">
+                    <h1>Lire les ADS-B avec un hackRF One</h1>
+                </header>
+                <div class="content__body">
+                    <h1 id="introduction">Introduction</h1>
+                    <p>
+                        Si vous avez un HackRF One et que vous voulez lire les
+                        signaux ADS-B, il est possible que vous ayez des
+                        difficultés à trouver un logiciel. Le logiciel le plus
+                        connu pour lire les signaux ADS-B est dump1090.
+                    </p>
+                    <p>
+                        Sur le github officiel de dump1090, on se renconte très
+                        rapidement que le HackRF One n&rsquo;est pas pris en
+                        charge. Cependant, il existe un fork sur ce
+                        <a href="https://github.com/esuldin/dump1090">github</a
+                        >.
+                    </p>
+                    <p>
+                        Je vous conseille très fortement d&rsquo;utiliser debian
+                        ou une distribution qui est basé sur debian.
+                    </p>
+                    <h1 id="antenne">Antenne</h1>
+                    <h1 id="fonctionnement-de-dump1090">
+                        Fonctionnement de dump1090
+                    </h1>
+                    <p>
+                        Dans notre cas nous allons utiliser le mode
+                        <code>--interactive</code> qui permet d&rsquo;afficher
+                        les informations des avions en temps réel. Pour cela, il
+                        suffit de lancer la commande suivante:
+                    </p>
+                    <div class="highlight">
+                        <pre
+                            tabindex="0"
+                            style="
+                                color: #f8f8f2;
+                                background-color: #272822;
+                                -moz-tab-size: 4;
+                                -o-tab-size: 4;
+                                tab-size: 4;
+                            "
+                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./dump1090 --interactive
+</span></span></code></pre>
+                    </div>
+                    <p>
+                        (Pour les restes je vous invite à vous référer à la
+                        documentation)
+                    </p>
+                    <p>
+                        <img
+                            src="/images/dump1090.png"
+                            alt="Resultat de la commande"
+                        />
+                    </p>
+                    <p>
+                        Sur l&rsquo;image ci-dessus, on peut voir les
+                        informations des transponteur d&rsquo;avions qui sont
+                        capturé par le HackRF One. On peut voir dans la colonne
+                        <code>Flight</code>l&rsquo;identifiant de l&rsquo;avion.
+                        Dans les colonnes suivant on a d&rsquo;autres
+                        informations comme la vitesse, l&rsquo;altitude, la
+                        position.
+                    </p>
+                    <p>
+                        <img
+                            src="/images/fr1.png"
+                            alt="Resultat de la commande"
+                        />
+                        <img
+                            src="/images/fr2.png"
+                            alt="Resultat de la commande"
+                        />
+                    </p>
+                    <p>
+                        Bien entendu quand j&rsquo;ai écrit cet article, un seul
+                        avion est à la portée de mon antenne (comme par hazard).
+                    </p>
+                </div>
+                <footer class="content__footer"></footer>
             </section>
 
             <section class="page__aside">
                 <div class="aside__about">
-<div class="aside__about">
-    
-    
-<h1 class="about__title">Segfault45</h1>
-<p class="about__description">Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée).</p>
-</div>
+                    <div class="aside__about">
+                        <h1 class="about__title">Segfault45</h1>
+                        <p class="about__description">
+                            Une voiture aux roues carrées pourra rouler sur une
+                            route au revêtement composé de tronçons de cosinus
+                            hyperboliques (une citation volée).
+                        </p>
+                    </div>
 
+                    <ul class="aside__social-links">
+                        <li>
+                            <a
+                                href="https://github.com/PantaRhei"
+                                rel="me"
+                                aria-label="GitHub"
+                                title="GitHub"
+                                ><i
+                                    class="fa-brands fa-github"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
 
-<ul class="aside__social-links">
-    
-    <li>
-        <a href="https://github.com/PantaRhei" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-    <li>
-        <a href="mailto:segfault45@segfault45.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-</ul>
-</div>
-                <hr>
+                        <li>
+                            <a
+                                href="mailto:segfault45@segfault45.com"
+                                rel="me"
+                                aria-label="Email"
+                                title="Email"
+                                ><i
+                                    class="fa-solid fa-envelope"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
+                    </ul>
+                </div>
+                <hr />
                 <div class="aside__content">
-    
-    
-        <p>
-            
-            2024-10-03
-        </p>
-    
-
-    
-
+                    <p>2024-10-03</p>
                 </div>
             </section>
 
-            <footer class="page__footer"><p>
-                        
-    <br /><span class="active"><br /><b></b></span
-    ><br />
-
-       
-</p>
-<br /><br />
-<p class="copyright">© <a href="https://joeroe.io">void void</a> &amp; <a href="https://github.com/joeroe/risotto/graphs/contributors">void</a>.</p>
-<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
-</footer>
-
+            <footer class="page__footer">
+                <p>
+                    <br /><span class="active"><br /><b></b></span><br />
+                </p>
+                <br /><br />
+                <p class="copyright">
+                    © <a href="https://joeroe.io">void void</a> &amp;
+                    <a
+                        href="https://github.com/joeroe/risotto/graphs/contributors"
+                        >void</a
+                    >.
+                </p>
+                <p class="advertisement">
+                    Powered by <a href="https://gohugo.io/">hugo</a> and
+                    <a href="https://github.com/joeroe/risotto">risotto</a>.
+                </p>
+            </footer>
         </div>
     </body>
-
 </html>

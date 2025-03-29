@@ -1,131 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <title>Posts &ndash; Segfault45</title>
+        <meta
+            name="description"
+            content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). "
+        />
 
-    <head><title>Posts &ndash; Segfault45</title>
-<meta name="description" content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). ">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css"
+            integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/risotto.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/custom.css"
+        />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/risotto.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/custom.css">
-
-
-
-
-
-
-
-
-
-<link rel="alternate" type="application/rss+xml" href="https://pantarhei.github.io/site-web/public/posts/index.xml" title="Segfault45">
-
-</head>
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            href="https://pantarhei.github.io/site-web/public/posts/index.xml"
+            title="Segfault45"
+        />
+    </head>
 
     <body>
         <div class="page">
+            <header class="page__header">
+                <nav class="page__nav main-nav">
+                    <ul>
+                        <li class="nomarker">
+                            <h1 class="page__logo">
+                                <a
+                                    href="https://pantarhei.github.io/site-web/public/index.html"
+                                    class="page__logo-inner"
+                                    >Segfault45</a
+                                >
+                            </h1>
+                        </li>
 
-            <header class="page__header"><nav class="page__nav main-nav">
-    <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="https://pantarhei.github.io/site-web/public/" class="page__logo-inner">Segfault45</a></h1></li>
-    
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/about/" title="">About</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/cheat_sheet/" title="">Cheat sheet</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/links/" title="">Links</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item active" href="https://pantarhei.github.io/site-web/public/posts/" title="">Posts</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/radio/" title="">Radio</a></li>
-    
-    </ul>
-</nav>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/about/"
+                                title=""
+                                >About</a
+                            >
+                        </li>
 
-</header>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/cheat_sheet/"
+                                title=""
+                                >Cheat sheet</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/links/"
+                                title=""
+                                >Links</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item active"
+                                href="https://pantarhei.github.io/site-web/public/posts/"
+                                title=""
+                                >Posts</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/radio/"
+                                title=""
+                                >Radio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
             <section class="page__body">
-    <h1 id="posts">Posts</h1>
+                <h1 id="posts">Posts</h1>
 
-    
+                <ul>
+                    <li>
+                        <a
+                            href="https://pantarhei.github.io/site-web/public/posts/buspirate_i2c_lcd/"
+                            >Buspirate_I2C_LCD</a
+                        >
+                    </li>
 
-    <ul>
-    
-        <li><a href="https://pantarhei.github.io/site-web/public/posts/buspirate_i2c_lcd/">Buspirate_I2C_LCD</a></li>
+                    <li>
+                        <a
+                            href="https://pantarhei.github.io/site-web/public/posts/test_bus_pirate/"
+                            >Test_bus_pirate_V3</a
+                        >
+                    </li>
 
-    
-        <li><a href="https://pantarhei.github.io/site-web/public/posts/test_bus_pirate/">Test_bus_pirate_V3</a></li>
+                    <li>
+                        <a
+                            href="https://pantarhei.github.io/site-web/public/posts/bell_door/"
+                            >Bell door</a
+                        >
+                    </li>
 
-    
-        <li><a href="https://pantarhei.github.io/site-web/public/posts/bell_door/">Bell door</a></li>
+                    <li>
+                        <a
+                            href="https://pantarhei.github.io/site-web/public/posts/ads-b_with_hackrf_one/"
+                            >Lire les ADS-B avec un hackRF One</a
+                        >
+                    </li>
 
-    
-        <li><a href="https://pantarhei.github.io/site-web/public/posts/ads-b_with_hackrf_one/">Lire les ADS-B avec un hackRF One</a></li>
+                    <li>
+                        <a
+                            href="https://pantarhei.github.io/site-web/public/posts/resume/"
+                            >Resume</a
+                        >
+                    </li>
 
-    
-        <li><a href="https://pantarhei.github.io/site-web/public/posts/resume/">Resume</a></li>
-
-    
-        <li><a href="https://pantarhei.github.io/site-web/public/posts/hackrf_nixos_access_denied/">Hackrf one Nixos access denied</a></li>
-
-    
-    </ul>
-
-
+                    <li>
+                        <a
+                            href="https://pantarhei.github.io/site-web/public/posts/hackrf_nixos_access_denied/"
+                            >Hackrf one Nixos access denied</a
+                        >
+                    </li>
+                </ul>
             </section>
 
             <section class="page__aside">
                 <div class="aside__about">
-<div class="aside__about">
-    
-    
-<h1 class="about__title">Segfault45</h1>
-<p class="about__description">Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée).</p>
-</div>
+                    <div class="aside__about">
+                        <h1 class="about__title">Segfault45</h1>
+                        <p class="about__description">
+                            Une voiture aux roues carrées pourra rouler sur une
+                            route au revêtement composé de tronçons de cosinus
+                            hyperboliques (une citation volée).
+                        </p>
+                    </div>
 
+                    <ul class="aside__social-links">
+                        <li>
+                            <a
+                                href="https://github.com/PantaRhei"
+                                rel="me"
+                                aria-label="GitHub"
+                                title="GitHub"
+                                ><i
+                                    class="fa-brands fa-github"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
 
-<ul class="aside__social-links">
-    
-    <li>
-        <a href="https://github.com/PantaRhei" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-    <li>
-        <a href="mailto:segfault45@segfault45.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-</ul>
-</div>
-                <hr>
-                <div class="aside__content">
-    
-
+                        <li>
+                            <a
+                                href="mailto:segfault45@segfault45.com"
+                                rel="me"
+                                aria-label="Email"
+                                title="Email"
+                                ><i
+                                    class="fa-solid fa-envelope"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
+                    </ul>
                 </div>
+                <hr />
+                <div class="aside__content"></div>
             </section>
 
-            <footer class="page__footer"><p>
-                          
-    <br /><span class="active"><br /><b></b></span
-    ><br />
-
-       
-</p>
-<br /><br />
-<p class="copyright">© <a href="https://joeroe.io">void void</a> &amp; <a href="https://github.com/joeroe/risotto/graphs/contributors">void</a>.</p>
-<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
-</footer>
-
+            <footer class="page__footer">
+                <p>
+                    <br /><span class="active"><br /><b></b></span><br />
+                </p>
+                <br /><br />
+                <p class="copyright">
+                    © <a href="https://joeroe.io">void void</a> &amp;
+                    <a
+                        href="https://github.com/joeroe/risotto/graphs/contributors"
+                        >void</a
+                    >.
+                </p>
+                <p class="advertisement">
+                    Powered by <a href="https://gohugo.io/">hugo</a> and
+                    <a href="https://github.com/joeroe/risotto">risotto</a>.
+                </p>
+            </footer>
         </div>
     </body>
-
 </html>

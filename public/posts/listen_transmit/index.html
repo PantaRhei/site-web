@@ -1,180 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <title>Listen-transmit project 1/n &ndash; Segfault45</title>
+        <meta
+            name="description"
+            content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). "
+        />
 
-    <head><title>Listen-transmit project 1/n &ndash; Segfault45</title>
-<meta name="description" content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). ">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css"
+            integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/risotto.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/custom.css">
-
-
-
-
-
-
-
-
-
-
-</head>
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/risotto.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/custom.css"
+        />
+    </head>
 
     <body>
         <div class="page">
+            <header class="page__header">
+                <nav class="page__nav main-nav">
+                    <ul>
+                        <li class="nomarker">
+                            <h1 class="page__logo">
+                                <a
+                                    href="https://pantarhei.github.io/site-web/public/index.html"
+                                    class="page__logo-inner"
+                                    >Segfault45</a
+                                >
+                            </h1>
+                        </li>
 
-            <header class="page__header"><nav class="page__nav main-nav">
-    <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="https://pantarhei.github.io/site-web/public/" class="page__logo-inner">Segfault45</a></h1></li>
-    
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/about/" title="">About</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/cheat_sheet/" title="">Cheat sheet</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/links/" title="">Links</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/posts/" title="">Posts</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/radio/" title="">Radio</a></li>
-    
-    </ul>
-</nav>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/about/"
+                                title=""
+                                >About</a
+                            >
+                        </li>
 
-</header>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/cheat_sheet/"
+                                title=""
+                                >Cheat sheet</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/links/"
+                                title=""
+                                >Links</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/posts/"
+                                title=""
+                                >Posts</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/radio/"
+                                title=""
+                                >Radio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
             <section class="page__body">
-    <header class="content__header">
-        <h1>Listen-transmit project 1/n</h1>
-    </header>
-    <div class="content__body">
-        <h1 id="introduction">Introduction</h1>
-<p>L&rsquo;objectif de ce projet est de créer une station de réception et de transmission
-à partir d&rsquo;un Raspberry Pi 5 4 Go. On utilisera un HackRF One pour la réception
-et l&rsquo;émission, ainsi qu&rsquo;un RTL-SDR pour la réception.</p>
-<p>Ainsi, le Raspberry Pi 5 pourrait remplacer le Portapack du HackRF One.
-Il offrirait une puissance de calcul et une capacité d&rsquo;adaptation à
-d&rsquo;autres dispositifs SDR plus importante que le Portapack.</p>
-<p>De plus, le Raspberry Pi 5 est plus facilement dissimulable que le Portapack.
-On peut très bien cacher le Raspberry Pi 5 dans un sac et le contrôler depuis
-un PC ou un téléphone. Ainsi, lors d&rsquo;une utilisation dans un magasin ou un restaurant,
-le Raspberry Pi 5 serait caché avec les dispositifs SDR et les antennes dans un sac.</p>
-<h1 id="os-utilisé">OS utilisé.</h1>
-<p>Après plusieurs essais, le choix se porte sur <a href="https://sourceforge.net/projects/dragonos-focal/">Dragon OS</a>.
-L&rsquo;avantage est qu&rsquo;il est déjà préconfiguré pour le HackRF One et le RTL-SDR.
-Il propose un serveur VNC pour les applications graphiques et un serveur SSH.
-De plus, la plupart des outils utilisés pour la SDR y sont présents.</p>
-<p>L&rsquo;installation se fait très facilement à l&rsquo;aide du logiciel : <code>Raspberry Pi Imager</code>.</p>
-<p>Voila un neofetch du système installé:
-<img src="/images/neofetch_dragon_os_rb.png" alt="Description de l&rsquo;image"></p>
-<h1 id="connection-sur-la-rasberry-pi-5">Connection sur la Rasberry pi 5</h1>
-<h2 id="wifi">WIFI</h2>
-<p>Pour cela, nous avons plusieurs solutions :</p>
-<ul>
-<li>Utiliser un réseau Wi-Fi généré par un téléphone. Dans notre cas, nous
-avons choisi de créer un réseau Wi-Fi avec un téléphone. Lors de l&rsquo;allumage
-du Raspberry Pi 5, il se connecte automatiquement au réseau Wi-Fi et, depuis
-un PC ou un téléphone, on peut se connecter au Raspberry Pi 5 avec un client
-SSH ou VNC viewer. Le problème de cette méthode est que le téléphone qui génère
-le réseau Wi-Fi ne peut pas se connecter au Raspberry Pi 5 en même temps
-(je pense que c&rsquo;est faisable, mais cela doit nécessiter une configuration
-spécifique du téléphone).</li>
-<li>La deuxième solution est de faire créer un hotspot par le Raspberry Pi 5,
-mais cela comporte un risque de consommation d&rsquo;énergie plus élevée.</li>
-</ul>
-<h2 id="ethernet">Ethernet</h2>
-<p>Cette solution peut être envisagée, mais pour le moment, elle n&rsquo;a pas été testée.</p>
-<h1 id="alimentation">Alimentation</h1>
-<p>Étant donné la nature du projet, il faut une alimentation externe
-transportable pour le Raspberry Pi. À ce stade, je n&rsquo;ai fait aucun test sérieux.</p>
-<p>J&rsquo;ai tenté de brancher ma batterie externe de 20 000 mAh
-(avec une sortie de 2 ampères) empruntée à une amie.
-Malheureusement, cela ne marche pas ; le Raspberry Pi
-s&rsquo;éteint quand je commence à lui en demander plus.</p>
-<h1 id="exemple-dutilisation-avec-deux-devices-sdr">Exemple d&rsquo;utilisation avec deux devices SDR</h1>
-<p>Dans cet exemple, on utilise deux dispositifs SDR :
-Le HackRF One, qui utilise l&rsquo;outil grgsm_scanner pour détecter les cellules GSM et
-le RTL-SDR, qui utilise l&rsquo;outil rtl_433 pour détecter les dispositifs à 433 MHz (beaucoup de voitures).</p>
-<p><img src="/images/RTL_gsm_rb.png" alt="RTL 433 + grgsm_scanner"></p>
-<p>On peut voir que <code>grgsm_scanner</code> est assez gourmand en ressources.
-<img src="/images/htop_rtl_gsm_rb.png" alt="htop"></p>
-<p>Un problème constaté est qu&rsquo;il est difficile de brancher les deux dispositifs SDR ;
-le RTL-SDR a tendance à prendre beaucoup de place.
-<img src="/images/connectic_RB.jpg" alt="Connection hackrf + rtl-sdr"></p>
-<p>À ce stade, si vous voulez faire des tests, je vous conseille
-vraiment d&rsquo;utiliser VNC Viewer et de connecter le Raspberry Pi à votre réseau Wi-Fi.</p>
-<h1 id="problème">Problème</h1>
-<ul>
-<li>La rasberry pi 5 chaud beaucoup quand on le met dans un sac (no shit)&hellip;</li>
-<li>Le RTL-SDR a aussi tendance à chauffer (mais normal).</li>
-</ul>
-<p>Conclusion si vous cherchez à faire un four cherchait vers cette piste.</p>
-
-    </div>
-    <footer class="content__footer"></footer>
-
+                <header class="content__header">
+                    <h1>Listen-transmit project 1/n</h1>
+                </header>
+                <div class="content__body">
+                    <h1 id="introduction">Introduction</h1>
+                    <p>
+                        L&rsquo;objectif de ce projet est de créer une station
+                        de réception et de transmission à partir d&rsquo;un
+                        Raspberry Pi 5 4 Go. On utilisera un HackRF One pour la
+                        réception et l&rsquo;émission, ainsi qu&rsquo;un RTL-SDR
+                        pour la réception.
+                    </p>
+                    <p>
+                        Ainsi, le Raspberry Pi 5 pourrait remplacer le Portapack
+                        du HackRF One. Il offrirait une puissance de calcul et
+                        une capacité d&rsquo;adaptation à d&rsquo;autres
+                        dispositifs SDR plus importante que le Portapack.
+                    </p>
+                    <p>
+                        De plus, le Raspberry Pi 5 est plus facilement
+                        dissimulable que le Portapack. On peut très bien cacher
+                        le Raspberry Pi 5 dans un sac et le contrôler depuis un
+                        PC ou un téléphone. Ainsi, lors d&rsquo;une utilisation
+                        dans un magasin ou un restaurant, le Raspberry Pi 5
+                        serait caché avec les dispositifs SDR et les antennes
+                        dans un sac.
+                    </p>
+                    <h1 id="os-utilisé">OS utilisé.</h1>
+                    <p>
+                        Après plusieurs essais, le choix se porte sur
+                        <a
+                            href="https://sourceforge.net/projects/dragonos-focal/"
+                            >Dragon OS</a
+                        >. L&rsquo;avantage est qu&rsquo;il est déjà
+                        préconfiguré pour le HackRF One et le RTL-SDR. Il
+                        propose un serveur VNC pour les applications graphiques
+                        et un serveur SSH. De plus, la plupart des outils
+                        utilisés pour la SDR y sont présents.
+                    </p>
+                    <p>
+                        L&rsquo;installation se fait très facilement à
+                        l&rsquo;aide du logiciel :
+                        <code>Raspberry Pi Imager</code>.
+                    </p>
+                    <p>
+                        Voila un neofetch du système installé:
+                        <img
+                            src="/images/neofetch_dragon_os_rb.png"
+                            alt="Description de l&rsquo;image"
+                        />
+                    </p>
+                    <h1 id="connection-sur-la-rasberry-pi-5">
+                        Connection sur la Rasberry pi 5
+                    </h1>
+                    <h2 id="wifi">WIFI</h2>
+                    <p>Pour cela, nous avons plusieurs solutions :</p>
+                    <ul>
+                        <li>
+                            Utiliser un réseau Wi-Fi généré par un téléphone.
+                            Dans notre cas, nous avons choisi de créer un réseau
+                            Wi-Fi avec un téléphone. Lors de l&rsquo;allumage du
+                            Raspberry Pi 5, il se connecte automatiquement au
+                            réseau Wi-Fi et, depuis un PC ou un téléphone, on
+                            peut se connecter au Raspberry Pi 5 avec un client
+                            SSH ou VNC viewer. Le problème de cette méthode est
+                            que le téléphone qui génère le réseau Wi-Fi ne peut
+                            pas se connecter au Raspberry Pi 5 en même temps (je
+                            pense que c&rsquo;est faisable, mais cela doit
+                            nécessiter une configuration spécifique du
+                            téléphone).
+                        </li>
+                        <li>
+                            La deuxième solution est de faire créer un hotspot
+                            par le Raspberry Pi 5, mais cela comporte un risque
+                            de consommation d&rsquo;énergie plus élevée.
+                        </li>
+                    </ul>
+                    <h2 id="ethernet">Ethernet</h2>
+                    <p>
+                        Cette solution peut être envisagée, mais pour le moment,
+                        elle n&rsquo;a pas été testée.
+                    </p>
+                    <h1 id="alimentation">Alimentation</h1>
+                    <p>
+                        Étant donné la nature du projet, il faut une
+                        alimentation externe transportable pour le Raspberry Pi.
+                        À ce stade, je n&rsquo;ai fait aucun test sérieux.
+                    </p>
+                    <p>
+                        J&rsquo;ai tenté de brancher ma batterie externe de 20
+                        000 mAh (avec une sortie de 2 ampères) empruntée à une
+                        amie. Malheureusement, cela ne marche pas ; le Raspberry
+                        Pi s&rsquo;éteint quand je commence à lui en demander
+                        plus.
+                    </p>
+                    <h1 id="exemple-dutilisation-avec-deux-devices-sdr">
+                        Exemple d&rsquo;utilisation avec deux devices SDR
+                    </h1>
+                    <p>
+                        Dans cet exemple, on utilise deux dispositifs SDR : Le
+                        HackRF One, qui utilise l&rsquo;outil grgsm_scanner pour
+                        détecter les cellules GSM et le RTL-SDR, qui utilise
+                        l&rsquo;outil rtl_433 pour détecter les dispositifs à
+                        433 MHz (beaucoup de voitures).
+                    </p>
+                    <p>
+                        <img
+                            src="/images/RTL_gsm_rb.png"
+                            alt="RTL 433 + grgsm_scanner"
+                        />
+                    </p>
+                    <p>
+                        On peut voir que <code>grgsm_scanner</code> est assez
+                        gourmand en ressources.
+                        <img src="/images/htop_rtl_gsm_rb.png" alt="htop" />
+                    </p>
+                    <p>
+                        Un problème constaté est qu&rsquo;il est difficile de
+                        brancher les deux dispositifs SDR ; le RTL-SDR a
+                        tendance à prendre beaucoup de place.
+                        <img
+                            src="/images/connectic_RB.jpg"
+                            alt="Connection hackrf + rtl-sdr"
+                        />
+                    </p>
+                    <p>
+                        À ce stade, si vous voulez faire des tests, je vous
+                        conseille vraiment d&rsquo;utiliser VNC Viewer et de
+                        connecter le Raspberry Pi à votre réseau Wi-Fi.
+                    </p>
+                    <h1 id="problème">Problème</h1>
+                    <ul>
+                        <li>
+                            La rasberry pi 5 chaud beaucoup quand on le met dans
+                            un sac (no shit)&hellip;
+                        </li>
+                        <li>
+                            Le RTL-SDR a aussi tendance à chauffer (mais
+                            normal).
+                        </li>
+                    </ul>
+                    <p>
+                        Conclusion si vous cherchez à faire un four cherchait
+                        vers cette piste.
+                    </p>
+                </div>
+                <footer class="content__footer"></footer>
             </section>
 
             <section class="page__aside">
                 <div class="aside__about">
-<div class="aside__about">
-    
-    
-<h1 class="about__title">Segfault45</h1>
-<p class="about__description">Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée).</p>
-</div>
+                    <div class="aside__about">
+                        <h1 class="about__title">Segfault45</h1>
+                        <p class="about__description">
+                            Une voiture aux roues carrées pourra rouler sur une
+                            route au revêtement composé de tronçons de cosinus
+                            hyperboliques (une citation volée).
+                        </p>
+                    </div>
 
+                    <ul class="aside__social-links">
+                        <li>
+                            <a
+                                href="https://github.com/PantaRhei"
+                                rel="me"
+                                aria-label="GitHub"
+                                title="GitHub"
+                                ><i
+                                    class="fa-brands fa-github"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
 
-<ul class="aside__social-links">
-    
-    <li>
-        <a href="https://github.com/PantaRhei" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-    <li>
-        <a href="mailto:segfault45@segfault45.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-</ul>
-</div>
-                <hr>
+                        <li>
+                            <a
+                                href="mailto:segfault45@segfault45.com"
+                                rel="me"
+                                aria-label="Email"
+                                title="Email"
+                                ><i
+                                    class="fa-solid fa-envelope"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
+                    </ul>
+                </div>
+                <hr />
                 <div class="aside__content">
-    
-    
-        <p>
-            
-            2024-10-17
-        </p>
-    
-
-    
-
+                    <p>2024-10-17</p>
                 </div>
             </section>
 
-            <footer class="page__footer"><p>
-                        
-    <br /><span class="active"><br /><b></b></span
-    ><br />
-
-       
-</p>
-<br /><br />
-<p class="copyright">© <a href="https://joeroe.io">void void</a> &amp; <a href="https://github.com/joeroe/risotto/graphs/contributors">void</a>.</p>
-<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
-</footer>
-
+            <footer class="page__footer">
+                <p>
+                    <br /><span class="active"><br /><b></b></span><br />
+                </p>
+                <br /><br />
+                <p class="copyright">
+                    © <a href="https://joeroe.io">void void</a> &amp;
+                    <a
+                        href="https://github.com/joeroe/risotto/graphs/contributors"
+                        >void</a
+                    >.
+                </p>
+                <p class="advertisement">
+                    Powered by <a href="https://gohugo.io/">hugo</a> and
+                    <a href="https://github.com/joeroe/risotto">risotto</a>.
+                </p>
+            </footer>
         </div>
     </body>
-
 </html>

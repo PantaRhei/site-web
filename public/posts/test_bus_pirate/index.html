@@ -1,81 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <title>Test_bus_pirate_V3 &ndash; Segfault45</title>
+        <meta
+            name="description"
+            content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). "
+        />
 
-    <head><title>Test_bus_pirate_V3 &ndash; Segfault45</title>
-<meta name="description" content="Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée). ">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css"
+            integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/risotto.css">
-<link rel="stylesheet" href="https://pantarhei.github.io/site-web/public/css/custom.css">
-
-
-
-
-
-
-
-
-
-
-</head>
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/palettes/base16-dark.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/risotto.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pantarhei.github.io/site-web/public/css/custom.css"
+        />
+    </head>
 
     <body>
         <div class="page">
+            <header class="page__header">
+                <nav class="page__nav main-nav">
+                    <ul>
+                        <li class="nomarker">
+                            <h1 class="page__logo">
+                                <a
+                                    href="https://pantarhei.github.io/site-web/public/index.html"
+                                    class="page__logo-inner"
+                                    >Segfault45</a
+                                >
+                            </h1>
+                        </li>
 
-            <header class="page__header"><nav class="page__nav main-nav">
-    <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="https://pantarhei.github.io/site-web/public/" class="page__logo-inner">Segfault45</a></h1></li>
-    
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/about/" title="">About</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/cheat_sheet/" title="">Cheat sheet</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/links/" title="">Links</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/posts/" title="">Posts</a></li>
-    
-    <li class="main-nav__item"><a class="nav-main-item" href="https://pantarhei.github.io/site-web/public/radio/" title="">Radio</a></li>
-    
-    </ul>
-</nav>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/about/"
+                                title=""
+                                >About</a
+                            >
+                        </li>
 
-</header>
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/cheat_sheet/"
+                                title=""
+                                >Cheat sheet</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/links/"
+                                title=""
+                                >Links</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/posts/"
+                                title=""
+                                >Posts</a
+                            >
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a
+                                class="nav-main-item"
+                                href="https://pantarhei.github.io/site-web/public/radio/"
+                                title=""
+                                >Radio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
             <section class="page__body">
-    <header class="content__header">
-        <h1>Test_bus_pirate_V3</h1>
-    </header>
-    <div class="content__body">
-        <p><img src="/images/buspyrate.jpg" alt="Resultat de la commande"></p>
-<p>Mon bus pirate (il existe la version 5)</p>
-<pre tabindex="0"><code>Bus Pirate v3b
+                <header class="content__header">
+                    <h1>Test_bus_pirate_V3</h1>
+                </header>
+                <div class="content__body">
+                    <p>
+                        <img
+                            src="/images/buspyrate.jpg"
+                            alt="Resultat de la commande"
+                        />
+                    </p>
+                    <p>Mon bus pirate (il existe la version 5)</p>
+                    <pre tabindex="0"><code>Bus Pirate v3b
 Firmware v5.10 (r559)  Bootloader v4.4
 *************************************
 http://dangerousprototypes.com
 *****************
 .....
 *----------*
-</code></pre><h1 id="la-connexion">La connexion</h1>
-<p>Dans mon cas, j&rsquo;utilise minicom mais il y a plein d&rsquo;autres solutions.
-Si vous êtez sur linux pensez à ajouter votre utilisateur au groupe dialout (ou autre groupe selon votre distribution).
-Perso, sur arch linux, j&rsquo;ai ajouté  l&rsquo;utilisateur au groupe uucp.
-(cmd: <code>sudo usermod -a -G [uucp/dialout] $USER</code>).
-IMPORTANT: pensez à reboot.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>minicom -b <span style="color:#ae81ff">115200</span> -D /dev/tty.usbserial-A10LYGZA
-</span></span></code></pre></div><p>Petit script pour trouver le bus pirate (il peut largement être amélioré):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</code></pre>
+                    <h1 id="la-connexion">La connexion</h1>
+                    <p>
+                        Dans mon cas, j&rsquo;utilise minicom mais il y a plein
+                        d&rsquo;autres solutions. Si vous êtez sur linux pensez
+                        à ajouter votre utilisateur au groupe dialout (ou autre
+                        groupe selon votre distribution). Perso, sur arch linux,
+                        j&rsquo;ai ajouté l&rsquo;utilisateur au groupe uucp.
+                        (cmd:
+                        <code>sudo usermod -a -G [uucp/dialout] $USER</code>).
+                        IMPORTANT: pensez à reboot.
+                    </p>
+                    <div class="highlight">
+                        <pre
+                            tabindex="0"
+                            style="
+                                color: #f8f8f2;
+                                background-color: #272822;
+                                -moz-tab-size: 4;
+                                -o-tab-size: 4;
+                                tab-size: 4;
+                            "
+                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>minicom -b <span style="color:#ae81ff">115200</span> -D /dev/tty.usbserial-A10LYGZA
+</span></span></code></pre>
+                    </div>
+                    <p>
+                        Petit script pour trouver le bus pirate (il peut
+                        largement être amélioré):
+                    </p>
+                    <div class="highlight">
+                        <pre
+                            tabindex="0"
+                            style="
+                                color: #f8f8f2;
+                                background-color: #272822;
+                                -moz-tab-size: 4;
+                                -o-tab-size: 4;
+                                tab-size: 4;
+                            "
+                        ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>echo <span style="color:#e6db74">&#34;Find my bus pirate&#34;</span>
 </span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Deconnect pirate bus, and press any key to continue... &#34;</span>
 </span></span><span style="display:flex;"><span>read -n <span style="color:#ae81ff">1</span> -s -r -p <span style="color:#e6db74">&#34;&#34;</span>
@@ -92,12 +178,17 @@ IMPORTANT: pensez à reboot.</p>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#Connect pirate bus, and press any key to continue...</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#3a4</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; /dev/tty.usbserial-A10LYGZA</span>
-</span></span></code></pre></div><h1 id="self-test">Self test</h1>
-<p>Pour lancer un self test on doit mettre des jumpers
-entre les pin 3.3V et ADC, et entre les pin 5.0V et VPU.</p>
-<p>Taper <code>~</code> pour lancer le self test.
-Output:</p>
-<pre tabindex="0"><code>Disconnect any devices
+</span></span></code></pre>
+                    </div>
+                    <h1 id="self-test">Self test</h1>
+                    <p>
+                        Pour lancer un self test on doit mettre des jumpers
+                        entre les pin 3.3V et ADC, et entre les pin 5.0V et VPU.
+                    </p>
+                    <p>
+                        Taper <code>~</code> pour lancer le self test. Output:
+                    </p>
+                    <pre tabindex="0"><code>Disconnect any devices
 Connect (Vpu to +5V) and (ADC to +3.3V)
 Space to continue
 Ctrl
@@ -128,12 +219,20 @@ MISO OK
 CS OK
 MODE and VREG LEDs should be on!
 Any key to exit
-</code></pre><h1 id="alumer-une-led-depuis-la-pin-aux">Alumer une led depuis la pin AUX</h1>
-<p>Schèmas éléctrique:</p>
-<pre tabindex="0"><code>pin AUX du bus pirate -&gt; resistance de 220 Ohm -&gt; led -&gt; GND du bus pirate
-</code></pre><p>Lancer une connection sur le bus pirate, tapez <code>m</code> puis <code>9</code>.
-Output:</p>
-<pre tabindex="0"><code>HiZ&gt;m
+</code></pre>
+                    <h1 id="alumer-une-led-depuis-la-pin-aux">
+                        Alumer une led depuis la pin AUX
+                    </h1>
+                    <p>Schèmas éléctrique:</p>
+                    <pre
+                        tabindex="0"
+                    ><code>pin AUX du bus pirate -&gt; resistance de 220 Ohm -&gt; led -&gt; GND du bus pirate
+</code></pre>
+                    <p>
+                        Lancer une connection sur le bus pirate, tapez
+                        <code>m</code> puis <code>9</code>. Output:
+                    </p>
+                    <pre tabindex="0"><code>HiZ&gt;m
 1. HiZ
 2. 1-WIRE
 3. UART
@@ -147,10 +246,14 @@ x. exit(without change)
 
 (1)&gt;9
 Ready
-</code></pre><p>Avec <code>v</code>, on peut afficher l&rsquo;état des différents pins (voir exemple).
-Avec <code>A</code> et <code>a</code>, on peut allumer ou éteindre une led.
-Output:</p>
-<pre tabindex="0"><code>DIO&gt;A
+</code></pre>
+                    <p>
+                        Avec <code>v</code>, on peut afficher l&rsquo;état des
+                        différents pins (voir exemple). Avec <code>A</code> et
+                        <code>a</code>, on peut allumer ou éteindre une led.
+                        Output:
+                    </p>
+                    <pre tabindex="0"><code>DIO&gt;A
 AUX HIGH
 DIO&gt;v
 Pinstates:
@@ -167,16 +270,42 @@ GND     3.3V    5.0V    ADC     VPU     AUX     CLK     MOSI    CS      MISO
 P       P       P       I       I       O       I       I       I       I
 GND     0.00V   0.00V   0.00V   0.00V   L       L       L       L       L
 DIO&gt;
-</code></pre><p>On voit bien que la colonne 6 passe H (high) à L (low)</p>
-<h1 id="premier-programme">Premier programme</h1>
-<p>Pour cela, on revient au mode de depart avec <code>#</code>.
-On peut passer en mode script avec <code>s</code></p>
-<p>Pour ecrire un nouveau script, on entre <code>new</code>.
-La commande <code>run</code> permet de lancer le script.
-Et pour lister les lignes de code, on utilise <code>list</code>.
-La doc pour le basic est dispo <a href="http://dangerousprototypes.com/docs/Bus_Pirate_BASIC_script_reference">ici</a></p>
-<p>Le programme ci-dessous allume et éteint la led de la pin AUX toutes les secondes une dizaine de fois.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-basic" data-lang="basic"><span style="display:flex;"><span>10 <span style="color:#66d9ef">PRINT</span> <span style="color:#e6db74">&#34;start prog&#34;</span>
+</code></pre>
+                    <p>
+                        On voit bien que la colonne 6 passe H (high) à L (low)
+                    </p>
+                    <h1 id="premier-programme">Premier programme</h1>
+                    <p>
+                        Pour cela, on revient au mode de depart avec
+                        <code>#</code>. On peut passer en mode script avec
+                        <code>s</code>
+                    </p>
+                    <p>
+                        Pour ecrire un nouveau script, on entre
+                        <code>new</code>. La commande <code>run</code> permet de
+                        lancer le script. Et pour lister les lignes de code, on
+                        utilise <code>list</code>. La doc pour le basic est
+                        dispo
+                        <a
+                            href="http://dangerousprototypes.com/docs/Bus_Pirate_BASIC_script_reference"
+                            >ici</a
+                        >
+                    </p>
+                    <p>
+                        Le programme ci-dessous allume et éteint la led de la
+                        pin AUX toutes les secondes une dizaine de fois.
+                    </p>
+                    <div class="highlight">
+                        <pre
+                            tabindex="0"
+                            style="
+                                color: #f8f8f2;
+                                background-color: #272822;
+                                -moz-tab-size: 4;
+                                -o-tab-size: 4;
+                                tab-size: 4;
+                            "
+                        ><code class="language-basic" data-lang="basic"><span style="display:flex;"><span>10 <span style="color:#66d9ef">PRINT</span> <span style="color:#e6db74">&#34;start prog&#34;</span>
 </span></span><span style="display:flex;"><span>20 AUX <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>30 <span style="color:#66d9ef">FOR</span> I<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">TO</span> <span style="color:#ae81ff">10</span>
 </span></span><span style="display:flex;"><span>40 <span style="color:#66d9ef">LET</span> A<span style="color:#f92672">=</span>AUX
@@ -184,19 +313,37 @@ La doc pour le basic est dispo <a href="http://dangerousprototypes.com/docs/Bus_
 </span></span><span style="display:flex;"><span>60 <span style="color:#66d9ef">IF</span> A<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> <span style="color:#66d9ef">THEN</span> AUX <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">ELSE</span> AUX <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>70 DELAY <span style="color:#ae81ff">1000</span>
 </span></span><span style="display:flex;"><span>80 <span style="color:#66d9ef">NEXT</span> I
-</span></span></code></pre></div><p>Ça me rappelle le TI Basic (la bonne vieille époque).
-Maintenant, il paraît que les lycéens ont Python sur leurs calculatrices.</p>
-<h1 id="uart">UART</h1>
-<p>Ressource sur UART: <a href="https://book.hacktricks.xyz/todo/hardware-hacking/uart">ici</a>
-On utilisera dans cette exemple une arduino (mkr wifi 1010).
-Pour une Uno vous avez <a href="https://docs.arduino.cc/learn/built-in-libraries/software-serial/">cette lib</a></p>
-<p>Connection:</p>
-<pre tabindex="0"><code>Bus pirate &lt;-&gt; Arduino
+</span></span></code></pre>
+                    </div>
+                    <p>
+                        Ça me rappelle le TI Basic (la bonne vieille époque).
+                        Maintenant, il paraît que les lycéens ont Python sur
+                        leurs calculatrices.
+                    </p>
+                    <h1 id="uart">UART</h1>
+                    <p>
+                        Ressource sur UART:
+                        <a
+                            href="https://book.hacktricks.xyz/todo/hardware-hacking/uart"
+                            >ici</a
+                        >
+                        On utilisera dans cette exemple une arduino (mkr wifi
+                        1010). Pour une Uno vous avez
+                        <a
+                            href="https://docs.arduino.cc/learn/built-in-libraries/software-serial/"
+                            >cette lib</a
+                        >
+                    </p>
+                    <p>Connection:</p>
+                    <pre tabindex="0"><code>Bus pirate &lt;-&gt; Arduino
 GND        &lt;-&gt; GND
 MOSI(TX)   &lt;-&gt; RX
 MISO(RX)   &lt;-&gt; TX
-</code></pre><h2 id="lecture-sur-une-arduino-mkr-wifi-1010">Lecture sur une arduino (mkr wifi 1010)</h2>
-<pre tabindex="0"><code>HiZ&gt;m
+</code></pre>
+                    <h2 id="lecture-sur-une-arduino-mkr-wifi-1010">
+                        Lecture sur une arduino (mkr wifi 1010)
+                    </h2>
+                    <pre tabindex="0"><code>HiZ&gt;m
 1. HiZ
 2. 1-WIRE
 3. UART
@@ -246,8 +393,22 @@ UART&gt;(2)
 Raw UART input
 Any key to exit
 azerty
-</code></pre><p>Programme de l&rsquo;Arduino (sur une Uno, les pins RX/TX peuvent être différents) :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">//Pin TX/RX
+</code></pre>
+                    <p>
+                        Programme de l&rsquo;Arduino (sur une Uno, les pins
+                        RX/TX peuvent être différents) :
+                    </p>
+                    <div class="highlight">
+                        <pre
+                            tabindex="0"
+                            style="
+                                color: #f8f8f2;
+                                background-color: #272822;
+                                -moz-tab-size: 4;
+                                -o-tab-size: 4;
+                                tab-size: 4;
+                            "
+                        ><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">//Pin TX/RX
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">//TX 14
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">//RX 13
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
@@ -270,67 +431,89 @@ azerty
 </span></span><span style="display:flex;"><span>    Serial.println(sendChar);
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h1 id="ressource">Ressource</h1>
-<ul>
-<li><a href="https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/General%20IC/32103_SPCN.pdf">PIC24FJ64GA004 FAMILY</a></li>
-<li><a href="http://dangerousprototypes.com/docs/Bus_Pirate">Manuel bus pirate</a></li>
-</ul>
-
-    </div>
-    <footer class="content__footer"></footer>
-
+</span></span></code></pre>
+                    </div>
+                    <h1 id="ressource">Ressource</h1>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/General%20IC/32103_SPCN.pdf"
+                                >PIC24FJ64GA004 FAMILY</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="http://dangerousprototypes.com/docs/Bus_Pirate"
+                                >Manuel bus pirate</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <footer class="content__footer"></footer>
             </section>
 
             <section class="page__aside">
                 <div class="aside__about">
-<div class="aside__about">
-    
-    
-<h1 class="about__title">Segfault45</h1>
-<p class="about__description">Une voiture aux roues carrées pourra rouler sur une route au revêtement composé de tronçons de cosinus hyperboliques (une citation volée).</p>
-</div>
+                    <div class="aside__about">
+                        <h1 class="about__title">Segfault45</h1>
+                        <p class="about__description">
+                            Une voiture aux roues carrées pourra rouler sur une
+                            route au revêtement composé de tronçons de cosinus
+                            hyperboliques (une citation volée).
+                        </p>
+                    </div>
 
+                    <ul class="aside__social-links">
+                        <li>
+                            <a
+                                href="https://github.com/PantaRhei"
+                                rel="me"
+                                aria-label="GitHub"
+                                title="GitHub"
+                                ><i
+                                    class="fa-brands fa-github"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
 
-<ul class="aside__social-links">
-    
-    <li>
-        <a href="https://github.com/PantaRhei" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-    <li>
-        <a href="mailto:segfault45@segfault45.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
-    </li>
-    
-</ul>
-</div>
-                <hr>
+                        <li>
+                            <a
+                                href="mailto:segfault45@segfault45.com"
+                                rel="me"
+                                aria-label="Email"
+                                title="Email"
+                                ><i
+                                    class="fa-solid fa-envelope"
+                                    aria-hidden="true"
+                                ></i></a
+                            >&nbsp;
+                        </li>
+                    </ul>
+                </div>
+                <hr />
                 <div class="aside__content">
-    
-    
-        <p>
-            
-            2024-11-17
-        </p>
-    
-
-    
-
+                    <p>2024-11-17</p>
                 </div>
             </section>
 
-            <footer class="page__footer"><p>
-                        
-    <br /><span class="active"><br /><b></b></span
-    ><br />
-
-       
-</p>
-<br /><br />
-<p class="copyright">© <a href="https://joeroe.io">void void</a> &amp; <a href="https://github.com/joeroe/risotto/graphs/contributors">void</a>.</p>
-<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
-</footer>
-
+            <footer class="page__footer">
+                <p>
+                    <br /><span class="active"><br /><b></b></span><br />
+                </p>
+                <br /><br />
+                <p class="copyright">
+                    © <a href="https://joeroe.io">void void</a> &amp;
+                    <a
+                        href="https://github.com/joeroe/risotto/graphs/contributors"
+                        >void</a
+                    >.
+                </p>
+                <p class="advertisement">
+                    Powered by <a href="https://gohugo.io/">hugo</a> and
+                    <a href="https://github.com/joeroe/risotto">risotto</a>.
+                </p>
+            </footer>
         </div>
     </body>
-
 </html>
