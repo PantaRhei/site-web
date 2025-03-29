@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Radios on Segfault45</title>
-    <link>http://localhost:1313/radio/</link>
+    <link>https://pantarhei.github.io/site-web/public/radio/</link>
     <description>Recent content in Radios on Segfault45</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [void void](https://joeroe.io) &amp; [void](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
     <lastBuildDate>Tue, 18 Mar 2025 15:11:27 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/radio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pantarhei.github.io/site-web/public/radio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello_world</title>
-      <link>http://localhost:1313/radio/hello_world/</link>
+      <link>https://pantarhei.github.io/site-web/public/radio/hello_world/</link>
       <pubDate>Tue, 18 Mar 2025 15:11:27 +0100</pubDate>
-      <guid>http://localhost:1313/radio/hello_world/</guid>
+      <guid>https://pantarhei.github.io/site-web/public/radio/hello_world/</guid>
       <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello world&lt;/h1&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Grenoble - France</title>
-      <link>http://localhost:1313/radio/grenoble_france/</link>
+      <link>https://pantarhei.github.io/site-web/public/radio/grenoble_france/</link>
       <pubDate>Tue, 08 Oct 2024 13:37:44 +0200</pubDate>
-      <guid>http://localhost:1313/radio/grenoble_france/</guid>
+      <guid>https://pantarhei.github.io/site-web/public/radio/grenoble_france/</guid>
       <description>&lt;p&gt;Note : Cet article est en cours de rédaction sur un temps potentiellement infini.&#xA;Les hypothèses et les fréquences ne sont pas nécessairement exactes ou à jour.&lt;/p&gt;&#xA;&lt;h1 id=&#34;bibliothèque-universitaire-de-grenoble-institut-fourier&#34;&gt;Bibliothèque universitaire de Grenoble (Institut Fourier)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;signal-detect-2024-10-09-130652&#34;&gt;Signal detect: 2024-10-09 13:06:52&lt;/h2&gt;&#xA;&lt;p&gt;Software use: rtl_433 (for capture), gqrx (for visualisation)&lt;/p&gt;&#xA;&lt;p&gt;Receveir: RTL-SDR V.4 (for capture), HackRF One(for visualisation)&lt;/p&gt;&#xA;&lt;p&gt;Frequency: 433.436MHz (approximatif)&lt;/p&gt;&#xA;&lt;p&gt;Model detected: Sompfy RTS, utiliser pour les volets roulants;&#xA;Lien du commercant: &lt;a href=&#34;https://www.somfy.fr/assistance/notices/volet-roulant/radio-rts&#34;&gt;Lien&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Position deuxième étages halles sud.&lt;/p&gt;</description>
     </item>
   </channel>
